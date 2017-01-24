@@ -31,7 +31,53 @@
     </header>
     
     
-    
+    <!-- Контент -->
+    <main class="content">
+      <!-- Левая колонка с формой -->
+      <div class="content-left">
+        <form class="main-form" action="#" method="get">
+          <!-- Стоимость: -->
+          <fieldset class="main-form-range">
+            <legend>Стоимость</legend>
+            <div class="range-block">
+              <div class="range-line">
+                 <div class="range-line-min"></div>
+                 <div class="range-line-max"></div>
+              </div>
+            </div>
+            <div class="range-cost">
+               <div class="range-cost-min">От<span>0</span></div>
+               <div class="range-cost-max">До<span>15000</span></div>
+            </div>
+          </fieldset>
+          <!-- Сетка: -->
+          <fieldset class="main-form-layout">
+            <legend>Сетка</legend>
+            <label><input class="layout-radio" type="radio" name="layout" value="adaptive"> Адаптивная</label>
+            <label><input class="layout-radio" type="radio" name="layout" value="fixed"> Фиксированная</label>
+            <label><input class="layout-radio" type="radio" name="layout" value="rubber"> Резиновая</label>
+          </fieldset>
+          <!-- Особенности: -->
+          <fieldset class="main-form-feature">
+            <label><input class="feature-checkbox" type="checkbox" name="slider"> Слайдер</label>
+            <label><input class="feature-checkbox" type="checkbox" name="fblock"> Блок преимуществ</label>
+            <label><input class="feature-checkbox" type="checkbox" name="news"> Новости</label>
+            <label><input class="feature-checkbox" type="checkbox" name="gallery"> Галерея</label>
+            <label><input class="feature-checkbox" type="checkbox" name="basket"> Корзина</label>
+          </fieldset>
+          <!-- Кнопка отправки формы -->
+          <button class="main-form-submit" type="submit">Показать</button>
+        </form>
+      </div>
+      <!-- Правая колонка -->
+      <div class="content-right">
+        <div class="sort">
+          <div>Сортировать</div>
+          <div class="sort-options"></div>
+          
+        </div>
+      </div>
+    </main>
     
     
     <!-- Подвал -->
