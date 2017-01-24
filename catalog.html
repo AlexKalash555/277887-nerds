@@ -22,7 +22,7 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
-        <div class="header-cart">Корзина</div>
+        <div class="header-cart"><a href="#">Корзина</a></div>
       </div>
       <!-- Блок с заголовком страницы -->
       <div class="slider">
@@ -71,10 +71,43 @@
       </div>
       <!-- Правая колонка -->
       <div class="content-right">
-        <div class="sort">
+        <!-- Варианты сортировки -->
+        <div class="sorting">
           <div>Сортировать</div>
-          <div class="sort-options"></div>
-          
+          <div class="sorting-list">
+            <span class="sorting-item"><a href="#">По цене</a></span>
+            <span class="sorting-item"><a href="#">По типу</a></span>
+            <span class="sorting-item"><a href="#">По названию</a></span>
+          </div>
+          <div class="sorting-triangles">
+            <div class="max-min"></div>
+            <div class="min-max"></div>
+          </div>
+        </div>
+        <!-- Результаты поиска -->
+        <div class="goods-list">
+          <div class="goods-item">
+            <img class="goods-img" src="#" alt="Sedona">
+            <div class="goods-desc">
+              <b>Sedona</b>
+              <p>Информационный сайт для туристов</p>
+              <a class="goods-detail" href="#">Sedona</a>
+            </div>
+          </div>
+          <div class="goods-item"></div>
+          <div class="goods-item"></div>
+          <div class="goods-item"></div>
+          <div class="goods-item"></div>
+          <div class="goods-item"></div>
+        </div>
+        <!-- Пагинатор -->
+        <div class="paginator">
+          <ul class="page-list">
+            <li class="page-item"><a href="#">1</a></li>
+            <li class="page-item"><a href="#">2</a></li>
+            <li class="page-item"><a href="#">3</a></li>
+          </ul>
+          <a class="page-next" href="#">Следующая</a>
         </div>
       </div>
     </main>
