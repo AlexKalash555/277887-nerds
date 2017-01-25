@@ -9,8 +9,8 @@
     
     <!-- Шапка -->
     <header class="header">
-      <!-- Блок-строка в шапке -->
-      <div class="header-row">
+      <!-- Центровщик -->
+      <div class="centered">
         <div class="header-logo">
           <a href="index.html"><img src="#" alt="Логотип Нёрдс"></a>
         </div>
@@ -24,13 +24,18 @@
         </nav>
         <div class="header-cart"><a href="#">Корзина</a></div>
       </div>
-      <!-- Блок с заголовком страницы -->
-      <div class="slider">
-        <h1>Магазин готовых шаблонов</h1>
-      </div>
     </header>
     
     
+    <!-- Заголовок страницы -->
+    <div class="page-heading">
+      <!-- Центровщик -->
+      <div class="centered">
+        <h1>Магазин готовых шаблонов</h1>
+      </div>
+    </div>
+    
+      
     <!-- Контент -->
     <main class="content">
       <!-- Левая колонка с формой -->
@@ -41,13 +46,14 @@
             <legend>Стоимость</legend>
             <div class="range-block">
               <div class="range-line">
-                 <div class="range-line-min"></div>
-                 <div class="range-line-max"></div>
+                <div class="range-line-min"></div>
+                <div class="range-line-green"></divL>
+                <div class="range-line-max"></div>
               </div>
             </div>
             <div class="range-cost">
-               <div class="range-cost-min">От<span>0</span></div>
-               <div class="range-cost-max">До<span>15000</span></div>
+               <label class="range-cost-min">От <input type="number" name="min-cost" value="0"></label>
+               <label class="range-cost-max">До <input type="number" name="max-cost" value="15000"></label>
             </div>
           </fieldset>
           <!-- Сетка: -->
@@ -75,13 +81,13 @@
         <div class="sorting">
           <div>Сортировать</div>
           <div class="sorting-list">
-            <span class="sorting-item"><a href="#">По цене</a></span>
-            <span class="sorting-item"><a href="#">По типу</a></span>
-            <span class="sorting-item"><a href="#">По названию</a></span>
+            <a class="sorting-item" href="#">По цене</a></span>
+            <a class="sorting-item" href="#">По типу</a></span>
+            <a class="sorting-item" href="#">По названию</a></span>
           </div>
           <div class="sorting-triangles">
-            <div class="max-min"></div>
-            <div class="min-max"></div>
+            <a class="max-min">По убыванию</a>
+            <a class="min-max">По возрастанию</a>
           </div>
         </div>
         <!-- Результаты поиска -->
@@ -102,24 +108,37 @@
         </div>
         <!-- Пагинатор -->
         <div class="paginator">
-          <ul class="page-list">
-            <li class="page-item"><a href="#">1</a></li>
-            <li class="page-item"><a href="#">2</a></li>
-            <li class="page-item"><a href="#">3</a></li>
-          </ul>
+          <a class="page-item" href="#">1</a>
+          <a class="page-item" href="#">2</a>
+          <a class="page-item" href="#">3</a>
           <a class="page-next" href="#">Следующая</a>
         </div>
       </div>
     </main>
     
     
+    <!-- Карта -->
+    <div class="map">
+      <!-- Центровщик -->
+      <div class="centered">
+        <img class="map-img" src="#" alt="Изображение карты">
+        <div class="map-inner">
+          <h2>Nёrds design studio</h2>
+          <p>191186, Санкт-Петербург, ул. Большая Конюшенная, д. 19/8</p>
+          <p>тел. +7(812)275-75-75</p>
+          <a class="map-inner-link">Напишите нам</a>
+        </div>
+      </div>
+    </div>
+    
+    
     <!-- Подвал -->
     <footer class="footer">
       <!-- Соцсети -->
       <div class="socials">
-        <a class="vkontakte" href="vk.com">Vkontakte</a>
-        <a class="facebook" href="facebook.com">Facebook</a>
-        <a class="instagram" href="instagram.com">Instagram</a>
+        <a class="socials-btn vk" href="vk.com">Vkontakte</a>
+        <a class="socials-btn fb" href="facebook.com">Facebook</a>
+        <a class="socials-btn inst" href="instagram.com">Instagram</a>
       </div>
       <!-- Подвальный текст -->
       <div class="footer-text">
