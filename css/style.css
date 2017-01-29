@@ -1,1 +1,78 @@
-﻿
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+
+/** Кнопка **/
+.button {
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.header {
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.slider b {
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 500;
+}
+
+.feature-list b {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.info-left h1 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+}
+
+.info-left h2 {
+  font-weight: 700;
+}
+
+.info-right b {
+  font-weight: 700;
+}
+
+.info-right .percent-numer {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+}
+
+.info-right .percent-desc {
+  line-height: 18px;
+}
+
+.map h2 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.map p {
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.footer b {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.footer p {
+  line-height: 22px;
+}
