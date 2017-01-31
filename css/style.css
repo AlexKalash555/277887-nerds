@@ -1,78 +1,123 @@
-body {
-  font-family: "Roboto", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-}
-
-/** Кнопка **/
-.button {
-  line-height: 18px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
-.header {
-  line-height: 30px;
-  font-weight: 500;
-  text-transform: uppercase;
-}
-
+/* Текстовые стили из прошлого задания*/
 .slider b {
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
 }
-
 .feature-list b {
   font-size: 24px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
-
 .info-left h1 {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
 }
-
 .info-left h2 {
   font-weight: 700;
 }
-
 .info-right b {
   font-weight: 700;
 }
-
 .info-right .percent-numer {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
 }
-
 .info-right .percent-desc {
   line-height: 18px;
 }
-
 .map h2 {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
   text-transform: uppercase;
 }
-
 .map p {
   font-size: 16px;
   line-height: 18px;
 }
-
 .footer b {
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
 }
-
 .footer p {
   line-height: 22px;
 }
+
+
+
+/* Общие стили */
+body {
+  margin:0;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.button {
+  line-height: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+
+
+/* Шапка */
+.header {
+  padding-top: 50px;
+  padding-bottom: 18px;
+  background: #98baf2;
+  line-height: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.center {
+  width: 1160px;
+  padding: 0 20px;
+  margin: auto;
+  background: #f2a098;
+}
+.logo {
+  width: 160px;
+  height: 65px;
+  float: left;
+  background: #b7f298;
+}
+.nav {
+  width: 440px;
+  margin-left: 200px;
+  margin-top: 25px;
+  float: left;
+  background: #8486ff;
+}
+.nav ul {
+  margin:0;
+  padding:0;
+  list-style: none;
+}
+.nav li {
+  width: 100px;
+  margin: 0 5px;
+  float: left;
+  background: #84ffa7;
+}
+.cart {
+  width: 160px;
+  margin-top: 25px;
+  float: right;
+  text-align: right;
+  background: #eeff84;
+}
+
+
+
+
