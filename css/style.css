@@ -1,23 +1,3 @@
-/* Текстовые стили из прошлого задания*/
-.slider b {
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 500;
-}
-.feature-list b {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.info-left h1 {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 500;
-}
-.info-left h2 {
-  font-weight: 700;
-}
 .info-right b {
   font-weight: 700;
 }
@@ -64,9 +44,24 @@ body {
   clear: both;
 }
 .button {
+  display: inline-block;
+  vertical-align: bottom;
+  margin:0;
+  padding: 18px 10px;
+  color: #ffffff;
   line-height: 18px;
   font-weight: 500;
+  text-decoration: none;
   text-transform: uppercase;
+}
+.button-red {
+  background: #fb565a;;
+}
+.button-green {
+  background: #00ca74;
+}
+.button-yellow {
+  background: #efc84a;
 }
 
 
@@ -75,7 +70,7 @@ body {
 .header {
   padding-top: 50px;
   padding-bottom: 18px;
-  background: #98baf2;
+  background: #000;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
@@ -84,20 +79,20 @@ body {
   width: 1160px;
   padding: 0 20px;
   margin: auto;
-  background: #f2a098;
+  background: #aaa;
 }
 .logo {
   width: 160px;
   height: 65px;
   float: left;
-  background: #b7f298;
+  background: blue;
 }
 .nav {
   width: 440px;
   margin-left: 200px;
   margin-top: 25px;
   float: left;
-  background: #8486ff;
+  background: yellow;
 }
 .nav ul {
   margin:0;
@@ -108,21 +103,143 @@ body {
   width: 100px;
   margin: 0 5px;
   float: left;
-  background: #84ffa7;
+  background: red;
 }
 .cart {
   width: 160px;
   margin-top: 25px;
   float: right;
   text-align: right;
-  background: #eeff84;
+  background: yellow;
 }
 
 
 /* Слайдер */
 .slider {
-  background: #474d56;
+  background: #666;
+  padding-top: 75px;
+  padding-bottom: 80px;
+}
+.slide-desc {
+  width: 400px;
+  float: left;
+  background: #444;
+}
+.slide-caption {
+  display: block;
+  margin: 0;
+  margin-bottom: 43px;
+  font-size: 55px;
+  line-height: 55px;
+  background: yellow;
+}
+.slide-text {
+  margin: 0;
+  margin-bottom: 46px;
+  background: green;
+}
+.slider-control {
+  display: none;
 }
 
 
+/* Контент */
+.content {
+  width: 1160px;
+  padding: 0 20px;
+  margin: auto;
+  background: #ccc;
+  padding-top: 80px;
+}
 
+
+/* Блок преимуществ */
+.feature-list {
+  background: red;
+  margin-bottom: 80px;
+}
+.feature-item {
+  width: 300px;
+  float: left;
+  padding-top: 146px;
+  margin-right: 100px;
+  background-color: yellow;
+}
+.feature-item:last-child {
+  margin-right: 0;
+}
+.feature-item h2 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.feature-item p {
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.img-red {
+  background: #888 url("../img/adv-red.png") no-repeat;
+}
+.img-green {
+  background: #888 url("../img/adv-green.png") no-repeat;
+}
+.img-yellow {
+  background: #888 url("../img/adv-yellow.png") no-repeat;
+}
+
+
+/* Блок инфо */
+.index-wrap {
+  border-top: 2px solid red;
+  padding-top: 88px;
+  padding-bottom: 80px;
+}
+.info-left {
+  width: 660px;
+  background: #666;
+  float: left;
+}
+.info-caption {
+  display: block;
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  margin-bottom: 45px;
+  background: red;
+}
+.info-text {
+  margin-bottom: 45px;
+  
+}
+.info-list-caption {
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  
+}
+.info-list {
+  margin:0;
+  padding:0;
+  list-style: none;
+  background: red;
+}
+.info-list-item {
+  margin-bottom: 30px;
+}
+.info-right {
+  width: 360px;
+  float: right;
+  background: green;
+}
+.info-right img {
+  display: block;
+}
+.percent-block {
+  width: 120px;
+  background: #bbb;
+  float: left;
+}
