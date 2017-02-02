@@ -1,35 +1,3 @@
-.info-right b {
-  font-weight: 700;
-}
-.info-right .percent-numer {
-  font-size: 45px;
-  line-height: 45px;
-  font-weight: 700;
-}
-.info-right .percent-desc {
-  line-height: 18px;
-}
-.map h2 {
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-.map p {
-  font-size: 16px;
-  line-height: 18px;
-}
-.footer b {
-  font-size: 36px;
-  line-height: 36px;
-  font-weight: 700;
-}
-.footer p {
-  line-height: 22px;
-}
-
-
-
 /* Общие стили */
 body {
   margin:0;
@@ -46,7 +14,7 @@ body {
 .button {
   display: inline-block;
   vertical-align: bottom;
-  margin:0;
+  margin: 0;
   padding: 18px 10px;
   color: #ffffff;
   line-height: 18px;
@@ -147,9 +115,8 @@ body {
 .content {
   width: 1160px;
   padding: 0 20px;
-  margin: auto;
   background: #ccc;
-  padding-top: 80px;
+  margin: 80px auto;
 }
 
 
@@ -195,31 +162,32 @@ body {
 /* Блок инфо */
 .index-wrap {
   border-top: 2px solid red;
-  padding-top: 88px;
-  padding-bottom: 80px;
+  padding-top: 40px;
+  margin-bottom: 80px;
+  background: blue;
 }
+/* Левая сторона */
 .info-left {
   width: 660px;
+  margin-top: 50px;
   background: #666;
   float: left;
 }
-.info-caption {
+.info-left b {
   display: block;
+  margin-bottom: 45px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-  margin-bottom: 45px;
   background: red;
 }
-.info-text {
-  margin-bottom: 45px;
-  
+.info-left p {
+  margin-bottom: 50px;
 }
-.info-list-caption {
+.info-left h2 {
+  margin-bottom: 35px;
   font-weight: 700;
   text-transform: uppercase;
-  margin-bottom: 30px;
-  
 }
 .info-list {
   margin:0;
@@ -230,6 +198,10 @@ body {
 .info-list-item {
   margin-bottom: 30px;
 }
+.info-list-item:last-child {
+  margin:0;
+}
+/* Правая сторона */
 .info-right {
   width: 360px;
   float: right;
@@ -237,9 +209,133 @@ body {
 }
 .info-right img {
   display: block;
+  margin-bottom: 40px;
+}
+.info-right b {
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.percent-wrap {
+  background: red;
 }
 .percent-block {
   width: 120px;
-  background: #bbb;
+  background: red;
   float: left;
+}
+.percent-number {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 700;
+  margin-bottom: 26px;
+}
+.percent-desc {
+  line-height: 18px;
+  margin:0;
+}
+
+
+.website-list {
+  border-top: 2px solid red;
+  border-bottom: 2px solid red;
+  padding: 45px 0;
+  background: green;
+}
+.website-item {
+  width: 260px;
+  height: 90px;
+  margin: 0 20px;
+  display: block;
+  float: left;
+  background: red;
+  line-height:0;
+  text-align: center;
+  vertical-align: top;
+}
+.website-item:first-child {
+  margin-left: 0;
+}
+.website-item:last-child {
+  margin-right: 0;
+}
+
+
+/* Карта */
+.map {
+  padding-top: 54px;
+  padding-bottom: 54px;
+  background: yellow;
+}
+.map-inner {
+  width: 220px;
+  padding: 50px;
+  background: red;
+}
+.map-inner h2 {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background: white;
+}
+.map-inner p {
+  margin: 0;
+  margin-bottom: 25px;
+  font-size: 16px;
+  line-height: 18px;
+  background: white;
+}
+.map-inner p:last-of-type {
+  margin-bottom: 40px;
+}
+
+
+/* Подвал*/
+.footer {
+  width: 1160px;
+  padding: 70px 20px;
+  margin: auto;
+  background: #ccc;
+}
+.social-wrap {
+  width: 260px;
+  float: left;
+  background: red;
+}
+.social-wrap a {
+  background: black;
+  float: left;
+  width: 80px;
+  height: 80px;
+  font-size: 0;
+  margin: 0 5px;
+  border-radius: 50%;
+}
+.social-wrap a:first-child {
+  margin-left: 0;
+}
+.social-wrap a:last-child {
+  margin-right: 0;
+}
+.footer-text {
+  background: #333;
+  float: left;
+  margin-left: 140px;
+}
+.footer-text b {
+  display: block;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.footer-text p {
+  line-height: 22px;
+  margin: 0;
 }
