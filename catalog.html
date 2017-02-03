@@ -11,7 +11,6 @@
     
     <!-- Шапка -->
     <header class="header">
-      <!-- Центровщик -->
       <div class="center clearfix">
         <div class="logo">
           <a href="index.html"><img src="img/logo-header.png" width="160" height="65" alt="Логотип Нёрдс"></a>
@@ -31,7 +30,6 @@
     
     <!-- Заголовок страницы -->
     <div class="page-heading">
-      <!-- Центровщик -->
       <div class="center">
         <h1>Магазин готовых шаблонов</h1>
       </div>
@@ -39,49 +37,58 @@
     
       
     <!-- Контент -->
-    <main class="content">
-      <!-- Левая колонка с формой -->
+    <main class="content clearfix">
+      
+      <!-- Левая колонка -->
       <div class="content-left">
         <form class="main-form" action="#" method="get">
+          
           <!-- Стоимость: -->
-          <fieldset class="main-form-range">
-            <legend>Стоимость</legend>
+          <div class="main-form-range">
+            <b>Стоимость</b>
             <div class="range-block">
               <div class="range-line">
                 <div class="range-line-min"></div>
-                <div class="range-line-green"></divL>
+                <div class="range-line-green"></div>
                 <div class="range-line-max"></div>
               </div>
             </div>
             <div class="range-cost">
-               <label class="range-cost-min">От <input type="number" name="min-cost" value="0"></label>
-               <label class="range-cost-max">До <input type="number" name="max-cost" value="15000"></label>
+              <label class="range-cost-min">От <input type="number" name="min-cost" value="0"></label>
+              <label class="range-cost-max">До <input type="number" name="max-cost" value="15000"></label>
             </div>
-          </fieldset>
+          </div>
+          
           <!-- Сетка: -->
-          <fieldset class="main-form-layout">
-            <legend>Сетка</legend>
+          <div class="main-form-layout">
+            <b>Сетка</b>
             <label><input class="layout-radio" type="radio" name="layout" value="adaptive"> Адаптивная</label>
             <label><input class="layout-radio" type="radio" name="layout" value="fixed"> Фиксированная</label>
             <label><input class="layout-radio" type="radio" name="layout" value="rubber"> Резиновая</label>
-          </fieldset>
+          </div>
+          
           <!-- Особенности: -->
-          <fieldset class="main-form-feature">
+          <div class="main-form-feature">
+            <b>Особенности</b>
             <label><input class="feature-checkbox" type="checkbox" name="slider"> Слайдер</label>
             <label><input class="feature-checkbox" type="checkbox" name="fblock"> Блок преимуществ</label>
             <label><input class="feature-checkbox" type="checkbox" name="news"> Новости</label>
             <label><input class="feature-checkbox" type="checkbox" name="gallery"> Галерея</label>
             <label><input class="feature-checkbox" type="checkbox" name="basket"> Корзина</label>
-          </fieldset>
-          <!-- Кнопка отправки формы -->
-          <button class="main-form-submit" type="submit">Показать</button>
+          </div>
+          
+          <!-- Кнопка отправки -->
+          <button class="button button-gray" type="submit">Показать</button>
         </form>
       </div>
+      
+      
       <!-- Правая колонка -->
       <div class="content-right">
+        
         <!-- Варианты сортировки -->
-        <div class="sorting">
-          <div>Сортировать</div>
+        <div class="sorting clearfix">
+          <b>Сортировать:</b>
           <div class="sorting-list">
             <a class="sorting-item sorting-active" href="#">По цене</a>
             <a class="sorting-item" href="#">По типу</a>
@@ -92,36 +99,54 @@
             <a class="min-max">По возрастанию</a>
           </div>
         </div>
+        
         <!-- Результаты поиска -->
         <div class="goods-wrap">
           <div class="goods">
+            <div class="goods-top-element"></div>
             <img class="goods-img" src="img/site-sedona.jpg" alt="Sedona">
-            <div class="goods-inner">
+            <div class="goods-bottom-element">
               <b>Sedona</b>
-              <p>Информационный сайт для туристов</p>
-              <a class="button" href="#">9900 Руб.</a>
+              <p>Информационный сайт<br>для туристов</p>
+              <a class="button button-red" href="#">9900 Руб.</a>
             </div>
           </div>
-          <div class="goods"><img src="img/site-pink.jpg" alt="pink"></div>
-          <div class="goods"><img src="img/site-borodinsky.jpg" alt="borodinsky"></div>
-          <div class="goods"><img src="img/site-mishka.jpg" alt="mishka"></div>
-          <div class="goods"><img src="img/site-aplus.jpg" alt="aplus"></div>
-          <div class="goods"><img src="img/site-kvast.jpg" alt="kvast"></div>
+          <div class="goods">
+            <div class="goods-top-element"></div>
+            <img src="img/site-pink.jpg" alt="pink">
+          </div>
+          <div class="goods">
+            <div class="goods-top-element"></div>
+            <img src="img/site-borodinsky.jpg" alt="borodinsky">
+          </div>
+          <div class="goods">
+            <div class="goods-top-element"></div>
+            <img src="img/site-mishka.jpg" alt="mishka">
+          </div>
+          <div class="goods">
+            <div class="goods-top-element"></div>
+            <img src="img/site-aplus.jpg" alt="aplus">
+          </div>
+          <div class="goods">
+            <div class="goods-top-element"></div>
+            <img src="img/site-kvast.jpg" alt="kvast">
+          </div>
         </div>
+        
         <!-- Пагинатор -->
-        <div class="paginator">
-          <a class="page-link page-active" href="#">1</a>
-          <a class="page-link" href="#">2</a>
-          <a class="page-link" href="#">3</a>
-          <a class="page-link-next" href="#">Следующая</a>
-        </div>
+        <ul class="paginator clearfix">
+          <li><a class="page-link page-active" href="#">1</a></li>
+          <li><a class="page-link" href="#">2</a></li>
+          <li><a class="page-link" href="#">3</a></li>
+          <li><a class="button button-gray" href="#">Следующая</a></li>
+        </ul>
+        
       </div>
     </main>
     
     
     <!-- Карта -->
     <div class="map">
-      <!-- Центровщик -->
       <div class="center">
         <div class="map-inner">
           <h2>Nёrds design studio</h2>
@@ -135,12 +160,14 @@
     
     <!-- Подвал -->
     <footer class="footer clearfix">
+      
       <!-- Соцсети -->
       <div class="social-wrap clearfix">
         <a class="social-button vk" href="vk.com">Vkontakte</a>
         <a class="social-button fb" href="facebook.com">Facebook</a>
         <a class="social-button inst" href="instagram.com">Instagram</a>
       </div>
+      
       <!-- Подвальный текст -->
       <div class="footer-text">
         <b>Давайте дружить, это выгодно!</b>
