@@ -11,21 +11,31 @@ body {
   display: table;
   clear: both;
 }
+
+/* Центровщик*/
+.center {
+  width: 1160px;
+  padding: 0 20px;
+  margin: auto;
+  background: #aaa;
+}
+
+/* Кнопка */
 .button {
   display: inline-block;
   vertical-align: top;
-  text-align: center;
-  width: 150px;
   margin: 0;
-  padding: 18px 10px;
-  color: #ffffff;
+  padding: 16px 40px;
+  text-align: center;
   line-height: 18px;
   font-weight: 500;
+  color: #ffffff;
+  border-radius: 2px;
   text-decoration: none;
   text-transform: uppercase;
 }
 .button-red {
-  background: #fb565a;;
+  background: #fb565a;
 }
 .button-green {
   background: #00ca74;
@@ -34,125 +44,169 @@ body {
   background: #efc84a;
 }
 .button-gray {
-  font-weight: 700;
-  background: #eee;
+  background: #eeeeee;
   color: black;
 }
+
+
+
+
 
 /* Шапка */
 .header {
   padding-top: 50px;
   padding-bottom: 18px;
-  background: #000;
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
+  background: #000;
 }
-.center {
-  width: 1160px;
-  padding: 0 20px;
-  margin: auto;
-  background: #aaa;
-}
+
+/* Логотип */
 .logo {
   width: 160px;
   height: 65px;
   float: left;
-  background: blue;
 }
+.logo img {
+  width: 160px;
+  height: 65px;
+}
+.logo img:hover {
+  opacity: 0.6;
+}
+.logo img:active {
+  opacity: 0.3;
+}
+
+/* Навигация */
 .nav {
   width: 440px;
   margin-left: 200px;
-  margin-top: 25px;
+  padding-top: 25px;
   float: left;
-  background: yellow;
 }
 .nav ul {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 .nav li {
-  width: 100px;
-  margin: 0 5px;
+  width: 110px;
   float: left;
-  background: red;
+  text-align: center;
 }
-.cart {
-  width: 160px;
-  margin-top: 25px;
-  float: right;
+.nav li:first-child {
+  text-align: left;
+}
+.nav li:last-child {
   text-align: right;
-  background: yellow;
 }
+.nav a {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  background: #ccc;
+}
+
+/* Корзина */
+.cart {
+  padding-top: 25px;
+  float: right;
+}
+.cart a {
+  display: inline-block;
+  position: relative;
+  padding-left: 40px;
+  color: inherit;
+  text-decoration: none;
+  background: #ccc;
+}
+.cart a::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  left: 0;
+  top: 7px;
+  background: url("../img/cart.png");
+}
+
+
+
 
 
 /* Слайдер */
 .slider {
   background: #666;
-  padding-top: 75px;
+  padding-top: 60px;
   padding-bottom: 80px;
 }
-.slide-desc {
+.slider-desc {
   width: 400px;
   float: left;
   background: #444;
 }
-.slide-caption {
+.slider-desc b {
   display: block;
-  margin: 0;
-  margin-bottom: 43px;
+  margin-bottom: 25px;
   font-size: 55px;
   line-height: 55px;
   background: yellow;
 }
-.slide-text {
+.slider-desc p {
   margin: 0;
-  margin-bottom: 46px;
+  margin-bottom: 40px;
   background: green;
 }
+.slider .button {
+  padding: 16px 55px;
+}
+
+/* Пока не знаю как сделать */
 .slider-control {
   display: none;
 }
 
 
+
+
+
 /* Контент */
 .content {
   width: 1160px;
-  margin: 0 auto;
   padding: 0 20px;
+  margin: auto;
   background: #ccc;
 }
 
-
 /* Блок преимуществ */
-.feature-list {
-  background: red;
+.benefit-list {
   margin-top: 80px;
   margin-bottom: 80px;
+  background: red;
 }
-.feature-item {
+.benefit-item {
   width: 300px;
   float: left;
   padding-top: 146px;
   margin-right: 100px;
   background-color: yellow;
 }
-.feature-item:last-child {
+.benefit-item:last-child {
   margin-right: 0;
 }
-.feature-item h2 {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  text-transform: uppercase;
+.benefit-item h2 {
+  margin-top: 25px;
+  margin-bottom: 10px;
   font-size: 24px;
   line-height: 30px;
-  font-weight: 700;
   text-transform: uppercase;
 }
-.feature-item p {
-  margin-top: 30px;
-  margin-bottom: 40px;
+.benefit-item p {
+  margin-right: 20px;
+  margin-bottom: 30px;
+  background: yellow;
 }
 .img-red {
   background: #888 url("../img/adv-red.png") no-repeat;
@@ -164,87 +218,108 @@ body {
   background: #888 url("../img/adv-yellow.png") no-repeat;
 }
 
-
-/* Блок инфо */
+/* Основная информация и описание */
 .index-wrap {
   border-top: 2px solid red;
   padding-top: 40px;
-  margin-bottom: 80px;
+  margin-bottom: 72px;
   background: blue;
 }
+
 /* Левая сторона */
 .info-left {
   width: 660px;
-  margin-top: 50px;
-  background: #666;
   float: left;
+  margin-top: 35px;
+  background: #666;
 }
 .info-left b {
   display: block;
-  margin-bottom: 45px;
+  margin-bottom: 32px;
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
   background: red;
 }
 .info-left p {
-  margin-bottom: 50px;
+  margin-bottom: 40px;
 }
 .info-left h2 {
-  margin-bottom: 35px;
+  margin-bottom: 25px;
+  font-size: inherit;
+  line-height: inherit;
   font-weight: 700;
   text-transform: uppercase;
 }
 .info-list {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
   list-style: none;
   background: red;
 }
-.info-list-item {
-  margin-bottom: 30px;
+.info-item {
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 35px;
 }
-.info-list-item:last-child {
-  margin:0;
+.info-item:last-child {
+  margin: 0;
 }
+.info-item::before {
+  content:"";
+  position: absolute;
+  top: 12px;
+  left: 0;
+  width: 25px;
+  height: 2px;
+  background: black;
+}
+
 /* Правая сторона */
 .info-right {
   width: 360px;
   float: right;
   background: green;
+  font-size: 0; /* Для строчно-блочных элементов*/
 }
 .info-right img {
   display: block;
-  margin-bottom: 40px;
+  width: 360px;
+  height: 208px;
+  margin-bottom: 36px;
 }
 .info-right b {
   display: block;
   text-align: center;
   text-transform: uppercase;
+  font-size: 16px;
   font-weight: 700;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
 }
 .percent-wrap {
-  background: red;
-}
-.percent-block {
   width: 120px;
-  background: red;
-  float: left;
+  background: yellow;
+  display: inline-block; /* Вместо флоата */
+  vertical-align: bottom;
 }
 .percent-number {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
-  margin-bottom: 26px;
+  margin: 0;
+  margin-bottom: 20px;
+}
+.percent-number span {
+  font-size: 0.6em;
+  vertical-align: super;
 }
 .percent-desc {
+  font-size: 16px;
   line-height: 18px;
-  margin:0;
+  margin: 0;
 }
 
-
-/* Список сайтов*/
+/* Список вебсайтов с ссылками */
 .website-list {
   border-top: 2px solid red;
   border-bottom: 2px solid red;
