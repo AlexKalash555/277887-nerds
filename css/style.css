@@ -280,7 +280,6 @@ body {
   width: 360px;
   float: right;
   background: green;
-  font-size: 0; /* Для строчно-блочных элементов*/
 }
 .info-right img {
   display: block;
@@ -297,19 +296,22 @@ body {
   margin-bottom: 33px;
 }
 .percent-wrap {
+  font-size: 0;
+}
+.percent-inner {
   width: 120px;
   background: yellow;
   display: inline-block; /* Вместо флоата */
   vertical-align: bottom;
 }
-.percent-number {
+.percent-num {
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
   margin: 0;
   margin-bottom: 20px;
 }
-.percent-number span {
+.percent-num span {
   font-size: 0.6em;
   vertical-align: super;
 }
