@@ -325,19 +325,21 @@ body {
 .website-list {
   border-top: 2px solid red;
   border-bottom: 2px solid red;
-  padding: 45px 0;
   margin-bottom: 80px;
   background: green;
+  
+  overflow: hidden;
 }
 .website-item {
   float: left;
   width: 260px;
-  height: 90px;
+  height: 180px;
   margin: 0 20px;
   text-align: center;
   font-size: 0;
-  line-height: 90px;
+  line-height: 180px;
   background: black;
+  position: relative;
 }
 .website-item:first-child {
   margin-left: 0;
@@ -345,26 +347,52 @@ body {
 .website-item:last-child {
   margin-right: 0;
 }
+.website-item::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background: red;
+  right: -19px;
+  top: 64px;
+}
 .website-item img {
   background: yellow;
   vertical-align: middle;
 }
 
 
-/* Карта */
+
+
+
+
+
+
+
+
+
+
+
 .map {
-  padding-top: 54px;
-  padding-bottom: 54px;
-  background: yellow;
+  min-height: 416px;
+  position: relative;
+}
+.map iframe {
+  display: block;
 }
 .map-inner {
+  position: absolute;
+  top: 54px;
+  bottom: 54px;
+  left: 50%;
+  margin-left: -580px;
   width: 220px;
   padding: 50px;
   background: red;
 }
 .map-inner h2 {
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 22px;
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -373,14 +401,28 @@ body {
 }
 .map-inner p {
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 18px;
   font-size: 16px;
   line-height: 18px;
   background: white;
 }
 .map-inner p:last-of-type {
-  margin-bottom: 40px;
+  margin-bottom: 38px;
 }
+.map-inner .button {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
 
 
 /* Подвал*/
