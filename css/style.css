@@ -20,6 +20,8 @@ body {
   background: #aaa;
 }
 
+
+
 /* Кнопка */
 .button {
   display: inline-block;
@@ -50,8 +52,6 @@ body {
 
 
 
-
-
 /* Шапка */
 .header {
   padding-top: 50px;
@@ -61,6 +61,8 @@ body {
   text-transform: uppercase;
   background: #000;
 }
+
+
 
 /* Логотип */
 .logo {
@@ -78,6 +80,8 @@ body {
 .logo img:active {
   opacity: 0.3;
 }
+
+
 
 /* Навигация */
 .nav {
@@ -109,6 +113,8 @@ body {
   background: #ccc;
 }
 
+
+
 /* Корзина */
 .cart {
   padding-top: 25px;
@@ -131,8 +137,6 @@ body {
   top: 7px;
   background: url("../img/cart.png");
 }
-
-
 
 
 
@@ -162,14 +166,10 @@ body {
 .slider .button {
   padding: 16px 55px;
 }
-
 /* Пока не знаю как сделать */
 .slider-control {
   display: none;
 }
-
-
-
 
 
 /* Контент */
@@ -179,6 +179,8 @@ body {
   margin: auto;
   background: #ccc;
 }
+
+
 
 /* Блок преимуществ */
 .benefit-list {
@@ -218,6 +220,8 @@ body {
   background: #888 url("../img/adv-yellow.png") no-repeat;
 }
 
+
+
 /* Основная информация и описание */
 .index-wrap {
   border-top: 2px solid red;
@@ -225,6 +229,8 @@ body {
   margin-bottom: 72px;
   background: blue;
 }
+
+
 
 /* Левая сторона */
 .info-left {
@@ -245,7 +251,7 @@ body {
   margin-bottom: 40px;
 }
 .info-left h2 {
-  margin-bottom: 25px;
+  margin-bottom: 24px;
   font-size: inherit;
   line-height: inherit;
   font-weight: 700;
@@ -275,6 +281,8 @@ body {
   background: black;
 }
 
+
+
 /* Правая сторона */
 .info-right {
   width: 360px;
@@ -284,8 +292,8 @@ body {
 .info-right img {
   display: block;
   width: 360px;
-  height: 208px;
-  margin-bottom: 38px;
+  height: 209px;
+  margin-bottom: 36px;
 }
 .info-right b {
   display: block;
@@ -293,7 +301,7 @@ body {
   text-transform: uppercase;
   font-size: 16px;
   font-weight: 700;
-  margin-bottom: 33px;
+  margin-bottom: 32px;
 }
 .percent-wrap {
   font-size: 0;
@@ -309,7 +317,7 @@ body {
   line-height: 45px;
   font-weight: 700;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .percent-num span {
   font-size: 0.6em;
@@ -320,6 +328,8 @@ body {
   line-height: 18px;
   margin: 0;
 }
+
+
 
 /* Список вебсайтов с ссылками */
 .website-list {
@@ -362,32 +372,25 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
+/* Карта */
 .map {
-  min-height: 416px;
+  padding: 54px 0;
   position: relative;
+  background: yellow;
 }
 .map iframe {
-  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
 }
 .map-inner {
-  position: absolute;
-  top: 54px;
-  bottom: 54px;
-  left: 50%;
-  margin-left: -580px;
+  position: relative;  
+  float: left;
   width: 220px;
   padding: 50px;
+  padding-bottom: 46px;
   background: red;
 }
 .map-inner h2 {
@@ -413,15 +416,6 @@ body {
   box-sizing: border-box;
   width: 100%;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -472,16 +466,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-
-
-
 /* Заголовок каталога*/
 .page-heading {
   padding-top: 76px;
@@ -495,6 +479,8 @@ body {
   font-weight: 500;
 }
 
+
+
 /* Левая колонка */
 .content-left {
   width: 260px;
@@ -502,6 +488,8 @@ body {
   float: left;
   background: #555;
 } 
+
+
 
 /* Основная форма */
 .main-form b {
@@ -511,6 +499,8 @@ body {
   line-height: 30px;
   font-weight: 700;  
 }
+
+
 
 /* Стоимость: */
 .main-form-range {
@@ -537,6 +527,8 @@ body {
   width: 50px;
 }
 
+
+
 /* Сетка: */
 .main-form-layout {
   min-height: 150px;
@@ -547,6 +539,8 @@ body {
   display: block;
   line-height: 20px;
 }
+
+
 
 /* Особенности: */
 .main-form-feature {
@@ -559,6 +553,8 @@ body {
   line-height: 20px;
 }
 
+
+
 /* Правая колонка в контенте */
 .content-right {
   width: 760px;
@@ -566,6 +562,8 @@ body {
   float: right;
   background: lightgreen;
 }
+
+
 
 /* Варианты сортировки */
 .sorting {
@@ -598,11 +596,14 @@ body {
 }
 
 
+
 /* Результаты поиска */
 .goods-wrap {
   font-size: 0;
   margin-bottom: 60px;
 }
+
+
 
 /* Товар */
 .goods {
@@ -647,6 +648,7 @@ body {
 }
 
 
+
 /* Пагинатор */
 .paginator {
   background: red;
@@ -661,7 +663,6 @@ body {
   margin-right: 10px;
   background: white;
 }
-.page-link-next
 
 
 
