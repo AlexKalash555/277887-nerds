@@ -12,6 +12,7 @@ body {
   clear: both;
 }
 
+
 /* Центровщик*/
 .center {
   width: 1160px;
@@ -19,7 +20,6 @@ body {
   margin: auto;
   background: #aaa;
 }
-
 
 
 /* Кнопка */
@@ -51,7 +51,6 @@ body {
 }
 
 
-
 /* Шапка */
 .header {
   padding-top: 50px;
@@ -61,7 +60,6 @@ body {
   text-transform: uppercase;
   background: #000;
 }
-
 
 
 /* Логотип */
@@ -80,7 +78,6 @@ body {
 .logo img:active {
   opacity: 0.3;
 }
-
 
 
 /* Навигация */
@@ -114,7 +111,6 @@ body {
 }
 
 
-
 /* Корзина */
 .cart {
   padding-top: 25px;
@@ -137,7 +133,6 @@ body {
   top: 7px;
   background: url("../img/cart.png");
 }
-
 
 
 /* Слайдер */
@@ -174,12 +169,12 @@ body {
 
 /* Контент */
 .content {
+  display: block;
   width: 1160px;
   padding: 0 20px;
   margin: auto;
   background: #ccc;
 }
-
 
 
 /* Блок преимуществ */
@@ -221,7 +216,6 @@ body {
 }
 
 
-
 /* Основная информация и описание */
 .index-wrap {
   border-top: 2px solid red;
@@ -229,7 +223,6 @@ body {
   margin-bottom: 72px;
   background: blue;
 }
-
 
 
 /* Левая сторона */
@@ -282,7 +275,6 @@ body {
 }
 
 
-
 /* Правая сторона */
 .info-right {
   width: 360px;
@@ -330,11 +322,10 @@ body {
 }
 
 
-
 /* Список вебсайтов с ссылками */
 .website-list {
   border-top: 2px solid red;
-  border-bottom: 2px solid red;
+  border-bottom: 3px solid red;
   margin-bottom: 80px;
   background: green;
   
@@ -418,11 +409,10 @@ body {
 }
 
 
-
 /* Подвал*/
 .footer {
   width: 1160px;
-  padding: 70px 20px;
+  padding: 68px 20px;
   margin: auto;
   background: #ccc;
 }
@@ -466,29 +456,52 @@ body {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Заголовок каталога*/
 .page-heading {
-  padding-top: 76px;
-  padding-bottom: 120px;
+  padding-top: 60px;
+  padding-bottom: 107px;
   text-align: center;
   background: red;
 }
 .page-heading h1 {
+  margin: 0;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
 }
 
 
-
 /* Левая колонка */
-.content-left {
+.column-left {
   width: 260px;
-  margin-top: 60px;
+  margin-top: 55px;
   float: left;
   background: #555;
-} 
-
+}
 
 
 /* Основная форма */
@@ -501,32 +514,44 @@ body {
 }
 
 
-
 /* Стоимость: */
-.main-form-range {
+.form-range {
   min-height: 200px;
   margin-bottom: 55px;
   background: red;
 }
-.main-form-range div {
+.form-range b {
+  margin-bottom: 48px;
+}
+.range-wrap {
+  width: 100%;
+  height: 80px;
+  background: black;
   line-height: 22px;
   text-transform: uppercase;
 }
-.range-cost-min {
+.range-min {
   width: 100px;
   float: left;
+  background: white;
 }
-.range-cost-min input {
-  width: 50px;
-}
-.range-cost-max {
+.range-max {
   width: 100px;
   float: right;
+  background: yellow;
 }
-.range-cost-max input {
-  width: 50px;
+.range-green {
+  
 }
 
+.
+
+.cost-min input {
+  width: 50px;
+}
+.cost-max input {
+  width: 50px;
+}
 
 
 /* Сетка: */
@@ -541,7 +566,6 @@ body {
 }
 
 
-
 /* Особенности: */
 .main-form-feature {
   min-height: 220px;
@@ -554,15 +578,13 @@ body {
 }
 
 
-
 /* Правая колонка в контенте */
-.content-right {
+.column-right {
   width: 760px;
   margin-top: 60px; 
   float: right;
   background: lightgreen;
 }
-
 
 
 /* Варианты сортировки */
@@ -596,13 +618,11 @@ body {
 }
 
 
-
 /* Результаты поиска */
 .goods-wrap {
   font-size: 0;
   margin-bottom: 60px;
 }
-
 
 
 /* Товар */
@@ -648,7 +668,6 @@ body {
 }
 
 
-
 /* Пагинатор */
 .paginator {
   background: red;
@@ -663,8 +682,6 @@ body {
   margin-right: 10px;
   background: white;
 }
-
-
 
 
 

@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>студия Нёрдс</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
   </head>
   <body>
@@ -38,28 +39,24 @@
       
     <!-- Контент -->
     <main class="content clearfix">
-      
-      <!-- Левая колонка -->
-      <div class="content-left">
+      <div class="column-left">
         <form class="main-form" action="#" method="get">
           
-          <!-- Стоимость: -->
-          <div class="main-form-range">
+          <div class="form-range">
             <b>Стоимость</b>
-            <div class="range-block">
+            <div class="range-wrap">
               <div class="range-line">
-                <div class="range-line-min"></div>
-                <div class="range-line-green"></div>
-                <div class="range-line-max"></div>
+                <div class="range-min"></div>
+                <div class="range-green"></div>
+                <div class="range-max"></div>
               </div>
             </div>
-            <div class="range-cost">
-              <label class="range-cost-min">От <input type="number" name="min-cost" value="0"></label>
-              <label class="range-cost-max">До <input type="number" name="max-cost" value="15000"></label>
+            <div class="cost">
+              <label class="cost-min">От <input type="number" name="min-cost" value="0"></label>
+              <label class="cost-max">До <input type="number" name="max-cost" value="15000"></label>
             </div>
           </div>
           
-          <!-- Сетка: -->
           <div class="main-form-layout">
             <b>Сетка</b>
             <label><input class="layout-radio" type="radio" name="layout" value="adaptive"> Адаптивная</label>
@@ -84,7 +81,7 @@
       
       
       <!-- Правая колонка -->
-      <div class="content-right">
+      <div class="column-right">
         
         <!-- Варианты сортировки -->
         <div class="sorting clearfix">
