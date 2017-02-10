@@ -495,6 +495,12 @@ body {
 }
 
 
+
+
+
+
+
+
 /* Левая колонка */
 .column-left {
   width: 260px;
@@ -502,7 +508,6 @@ body {
   float: left;
   background: #555;
 }
-
 
 /* Основная форма */
 .main-form b {
@@ -513,57 +518,136 @@ body {
   font-weight: 700;  
 }
 
-
 /* Стоимость: */
 .form-range {
-  min-height: 200px;
   margin-bottom: 55px;
-  background: red;
+  background: lightgreen;
 }
+
 .form-range b {
   margin-bottom: 48px;
 }
+
 .range-wrap {
+  padding: 20px 0;
+  background: green;
+  margin-bottom: 15px;
+}
+
+.range-inner {
+  margin: auto;
+  width: 224px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+  background: #999;
+}
+
+.range-line {
   width: 100%;
-  height: 80px;
+  height: 2px;
+  background: white;
+  position: absolute;
+  top: 50%;
+  margin-top: -1px
+}
+
+.range-min {
+  width: 20px;
+  height: 20px;
+  background: red;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.range-min::before,
+.range-max::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background: yellow;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  margin-top: -2px;
+  margin-left: -2px;
+}
+
+.range-max {
+  width: 20px;
+  height: 20px;
+  background: blue;
+  border-radius: 50%;
+  position: absolute;
+  left: 142px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+.range-max::after {
+  content: "";
+  position: absolute;
   background: black;
-  line-height: 22px;
+  width: 500px;
+  height: 2px;
+  left: 20px;
+  top: 50%;
+  margin-top: -1px;
+}
+
+.cost-wrap {
+  background: #ddd;
   text-transform: uppercase;
 }
-.range-min {
-  width: 100px;
+.cost-min {
   float: left;
-  background: white;
-}
-.range-max {
-  width: 100px;
-  float: right;
   background: yellow;
 }
-.range-green {
-  
+.cost-max {
+  float: right;
+  background: blue;
+}
+.cost {
+  background: red;
+  display: inline-block;
+  margin-left: 8px;
+  padding: 6px 5px;
+  width: 70px;
+  text-align: center;
 }
 
-.
 
-.cost-min input {
-  width: 50px;
-}
-.cost-max input {
-  width: 50px;
-}
 
 
 /* Сетка: */
-.main-form-layout {
-  min-height: 150px;
+.form-layout {
   margin-bottom: 50px;
-  background: green;
+  background: lightgreen;
 }
-.main-form-layout label {
+.form-layout b {
+  margin-bottom: 15px;
+}
+.form-layout label {
   display: block;
   line-height: 20px;
+  margin-bottom: 20px;
+  background: red;
 }
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Особенности: */

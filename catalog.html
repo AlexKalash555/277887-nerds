@@ -42,27 +42,39 @@
       <div class="column-left">
         <form class="main-form" action="#" method="get">
           
+          <!-- Стоимость: -->
           <div class="form-range">
-            <b>Стоимость</b>
+            <b>Стоимость:</b>
             <div class="range-wrap">
-              <div class="range-line">
+              <div class="range-inner">
+                <div class="range-line"></div>
                 <div class="range-min"></div>
-                <div class="range-green"></div>
                 <div class="range-max"></div>
               </div>
             </div>
-            <div class="cost">
-              <label class="cost-min">От <input type="number" name="min-cost" value="0"></label>
-              <label class="cost-max">До <input type="number" name="max-cost" value="15000"></label>
+            <div class="cost-wrap clearfix">
+              <div class="cost-min">
+                <span>От</span>
+                <span class="cost">0</span>
+              </div>
+              <div class="cost-max">
+                <span>До</span>
+                <span class="cost">15 000</span>
+              </div>
             </div>
           </div>
-          
-          <div class="main-form-layout">
+
+          <!-- Сетка: -->
+          <div class="form-layout">
             <b>Сетка</b>
             <label><input class="layout-radio" type="radio" name="layout" value="adaptive"> Адаптивная</label>
             <label><input class="layout-radio" type="radio" name="layout" value="fixed"> Фиксированная</label>
             <label><input class="layout-radio" type="radio" name="layout" value="rubber"> Резиновая</label>
           </div>
+          
+          
+          
+          
           
           <!-- Особенности: -->
           <div class="main-form-feature">
