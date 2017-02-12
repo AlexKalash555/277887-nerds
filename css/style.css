@@ -510,7 +510,7 @@ body {
 }
 
 /* Основная форма */
-.main-form b {
+.catalog-form b {
   display: block;
   text-transform: uppercase;
   font-size: 18px;
@@ -518,22 +518,20 @@ body {
   font-weight: 700;  
 }
 
+
 /* Стоимость: */
 .form-range {
   margin-bottom: 55px;
   background: lightgreen;
 }
-
 .form-range b {
   margin-bottom: 48px;
 }
-
 .range-wrap {
   padding: 20px 0;
   background: green;
   margin-bottom: 15px;
 }
-
 .range-inner {
   margin: auto;
   width: 224px;
@@ -542,7 +540,6 @@ body {
   overflow: hidden;
   background: #999;
 }
-
 .range-line {
   width: 100%;
   height: 2px;
@@ -551,7 +548,6 @@ body {
   top: 50%;
   margin-top: -1px
 }
-
 .range-min {
   width: 20px;
   height: 20px;
@@ -562,7 +558,6 @@ body {
   top: 50%;
   margin-top: -10px;
 }
-
 .range-min::before,
 .range-max::before {
   content: "";
@@ -576,7 +571,6 @@ body {
   margin-top: -2px;
   margin-left: -2px;
 }
-
 .range-max {
   width: 20px;
   height: 20px;
@@ -587,7 +581,6 @@ body {
   top: 50%;
   margin-top: -10px;
 }
-
 .range-max::after {
   content: "";
   position: absolute;
@@ -598,7 +591,6 @@ body {
   top: 50%;
   margin-top: -1px;
 }
-
 .cost-wrap {
   background: #ddd;
   text-transform: uppercase;
@@ -621,85 +613,246 @@ body {
 }
 
 
-
-
 /* Сетка: */
 .form-layout {
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   background: lightgreen;
 }
 .form-layout b {
-  margin-bottom: 15px;
+  margin-bottom: 6px;
 }
-.form-layout label {
-  display: block;
+.layout-radio {
+  background: white;
   line-height: 20px;
-  margin-bottom: 20px;
-  background: red;
 }
-
-
-
-
-
-
-
-
-
-
-
+.layout-radio label {
+  position: relative;
+  font-size: 16px;
+  line-height: 40px;
+  color: #283136;
+}
+.layout-radio input {
+  display: none;
+}
+.layout-radio span {
+  margin-left: 36px;
+}
+.layout-radio span::before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.layout-radio label:hover {
+  color: black;
+}
+.layout-radio input:disabled + label {
+  color: #d0d2d3;
+}
+.layout-radio input:checked + label span::before {
+  background: url("../img/radio-on.png");
+  opacity: 0.6;
+}
+.layout-radio input:checked + label:hover span::before {
+  background: url("../img/radio-on.png");
+  opacity: 1;
+}
+.layout-radio input:not(:checked) + label span::before {
+  background: url("../img/radio-off.png");
+  opacity: 0.6;
+}
+.layout-radio input:not(:checked) + label:hover span::before {
+  background: url("../img/radio-off.png");
+  opacity: 1;
+}
+.layout-radio input:disabled + label span::before {
+  opacity: 0.3;
+}
+.layout-radio input:disabled + label:hover span::before {
+  opacity: 0.3;
+}
 
 
 /* Особенности: */
-.main-form-feature {
-  min-height: 220px;
-  margin-bottom: 50px;
-  background: yellow;
+.form-feature {
+  margin-bottom: 40px;
+  background: lightgreen;
 }
-.main-form-feature label {
-  display: block;
+.form-feature b {
+  margin-bottom: 6px;
+}
+.feature-checkbox {
+  background: white;
   line-height: 20px;
 }
+.feature-checkbox label {
+  position: relative;
+  font-size: 16px;
+  line-height: 40px;
+  color: #283136;
+}
+.feature-checkbox input {
+  display: none;
+}
+.feature-checkbox span {
+  margin-left: 36px;
+}
+.feature-checkbox span::before {
+  content: "";
+  width: 27px;
+  height: 25px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+.feature-checkbox label:hover {
+  color: black;
+}
+.feature-checkbox input:disabled + label {
+  color: #d0d2d3;
+}
+.feature-checkbox input:checked + label span::before {
+  background: url("../img/checkbox-on.png") no-repeat;
+  opacity: 0.5;
+}
+.feature-checkbox input:checked + label:hover span::before {
+  background: url("../img/checkbox-on.png") no-repeat;
+  opacity: 1;
+}
+.feature-checkbox input:not(:checked) + label span::before {
+  background: url("../img/checkbox-off.png") no-repeat;
+  opacity: 0.5;
+}
+.feature-checkbox input:not(:checked) + label:hover span::before {
+  background: url("../img/checkbox-off.png") no-repeat;
+  opacity: 1;
+}
+.feature-checkbox input:disabled + label span::before {
+  opacity: 0.3;
+}
+.feature-checkbox input:disabled + label:hover span::before {
+  opacity: 0.3;
+}
+
+
+/*Кнопка отправки формы*/
+.catalog-form button {
+  width: 100%;
+  font-weight: 700;
+  border: 0;
+}
+
+
 
 
 /* Правая колонка в контенте */
 .column-right {
   width: 760px;
-  margin-top: 60px; 
+  margin-top: 55px; 
   float: right;
   background: lightgreen;
 }
 
-
 /* Варианты сортировки */
 .sorting {
-  background: red;
+  background: #aaa;
   margin-bottom: 20px;
+  height: 24px;
 }
 .sorting b {
   width: 160px;
   float: left;
   font-size: 18px;
-  line-height: 18px;
   text-transform: uppercase;
-  background: green;
+  vertical-align: middle;
+  line-height: 24px;
 }
 .sorting-list {
-  width: 300px;
+  width: 280px;
   margin-left: 240px;
   float: left;
-  margin-left: ;
+  background: yellow;
+  font-size: 0;
+}
+.sorting-list a {
+  display: inline-block;
+  vertical-align: bottom;
   font-size: 14px;
   line-height: 18px;
-  background: yellow;
+  color: #b2b2b2;
+  text-transform: uppercase;
+  text-decoration: none;
+  width: 85px;
 }
+.sorting-list a:last-child {
+  width: 110px;
+}
+.sorting-list a:hover {
+  color: #666;
+}
+.sorting-list .sorting-active, .sorting-list a:active {
+  color: black;
+}
+
+/* Треугольники*/
 .sorting-triangles {
-  width: 60px;
   float: right;
-  background: blue;
-  font-size:0;
-  line-height: 18px;
+  width: 60px;
+  background: red;
 }
+.sorting-triangles div {
+  float: left;
+  width: 30px;
+  height: 24px;
+  background: blue;
+  position: relative;
+}
+.max-min a {
+  position: absolute;
+  border: 5px solid transparent;
+  border-top: 10px solid #b2b2b2;
+  font-size: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -4px;
+}
+.max-min .triangle-active {
+  border-top-color: black;
+}
+.max-min a:hover {
+  border-top-color: #666;
+}
+.max-min a:active {
+  border-top-color: black;
+}
+.min-max a {
+  position: absolute;
+  border: 5px solid transparent;
+  border-bottom: 10px solid #b2b2b2;
+  font-size: 0;
+  right: 0;
+  bottom: 50%;
+  margin-bottom: -4px;
+}
+.min-max .triangle-active {
+  border-bottom-color: black;
+}
+.min-max a:hover {
+  border-bottom-color: #666;
+}
+.min-max a:active {
+  border-bottom-color: black;
+}
+
+
+
+
 
 
 /* Результаты поиска */

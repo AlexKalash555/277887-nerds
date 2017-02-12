@@ -40,7 +40,7 @@
     <!-- Контент -->
     <main class="content clearfix">
       <div class="column-left">
-        <form class="main-form" action="#" method="get">
+        <form class="catalog-form" action="#" method="get">
           
           <!-- Стоимость: -->
           <div class="form-range">
@@ -66,30 +66,52 @@
 
           <!-- Сетка: -->
           <div class="form-layout">
-            <b>Сетка</b>
-            <label><input class="layout-radio" type="radio" name="layout" value="adaptive"> Адаптивная</label>
-            <label><input class="layout-radio" type="radio" name="layout" value="fixed"> Фиксированная</label>
-            <label><input class="layout-radio" type="radio" name="layout" value="rubber"> Резиновая</label>
+            <b>Сетка:</b>
+            <div class="layout-radio">
+              <input type="radio" id="radio-1" name="layout" value="adaptive" checked>
+              <label for="radio-1"><span>Адаптивная</span></label>
+            </div>
+            <div class="layout-radio">
+              <input type="radio" id="radio-2" name="layout" value="fixed">
+              <label for="radio-2"><span>Фиксированная</span></label>
+            </div>
+            <div class="layout-radio">
+              <input type="radio" id="radio-3" name="layout" value="rubber">
+              <label for="radio-3"><span>Резиновая</span></label>
+            </div>
           </div>
-          
-          
-          
-          
           
           <!-- Особенности: -->
-          <div class="main-form-feature">
-            <b>Особенности</b>
-            <label><input class="feature-checkbox" type="checkbox" name="slider"> Слайдер</label>
-            <label><input class="feature-checkbox" type="checkbox" name="fblock"> Блок преимуществ</label>
-            <label><input class="feature-checkbox" type="checkbox" name="news"> Новости</label>
-            <label><input class="feature-checkbox" type="checkbox" name="gallery"> Галерея</label>
-            <label><input class="feature-checkbox" type="checkbox" name="basket"> Корзина</label>
+          <div class="form-feature">
+            <b>Особенности:</b>
+            <div class="feature-checkbox">
+              <input type="checkbox" id="checkbox-1" name="slider" checked>
+              <label for="checkbox-1"><span>Слайдер</span></label>
+            </div>
+            <div class="feature-checkbox">
+              <input type="checkbox" id="checkbox-2" name="slider">
+              <label for="checkbox-2"><span>Блок преимуществ</span></label>
+            </div>
+            <div class="feature-checkbox">
+              <input type="checkbox" id="checkbox-3" name="slider" checked>
+              <label for="checkbox-3"><span>Новости</span></label>
+            </div>
+            <div class="feature-checkbox">
+              <input type="checkbox" id="checkbox-4" name="slider">
+              <label for="checkbox-4"><span>Галерея</span></label>
+            </div>
+            <div class="feature-checkbox">
+              <input type="checkbox" id="checkbox-5" name="slider">
+              <label for="checkbox-5"><span>Корзина</span></label>
+            </div>
           </div>
-          
-          <!-- Кнопка отправки -->
+
+          <!-- Кнопка отправки формы -->
           <button class="button button-gray" type="submit">Показать</button>
         </form>
       </div>
+      
+      
       
       
       <!-- Правая колонка -->
@@ -104,8 +126,12 @@
             <a class="sorting-item" href="#">По названию</a>
           </div>
           <div class="sorting-triangles">
-            <a class="max-min">По убыванию</a>
-            <a class="min-max">По возрастанию</a>
+            <div class="max-min">
+              <a class="triangle-active" href="#">По убыванию</a>
+            </div>
+            <div class="min-max">
+              <a href="#">По возрастанию</a>
+            </div>
           </div>
         </div>
         
