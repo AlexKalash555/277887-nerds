@@ -22,32 +22,79 @@ body {
 }
 
 
-/* Кнопка */
+/* Общие стили кнопок */
 .button {
   display: inline-block;
   vertical-align: top;
+  box-sizing: border-box;
   margin: 0;
-  padding: 16px 40px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   text-align: center;
-  line-height: 18px;
-  font-weight: 500;
-  color: #ffffff;
-  border-radius: 2px;
-  text-decoration: none;
   text-transform: uppercase;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  border-radius: 3px;
+  text-decoration: none;
 }
+
+
+/* Красная кнопка */
 .button-red {
-  background: #fb565a;
+  background-color: #fb565a;
 }
+.button-red:hover {
+  background-color: #e74246;
+}
+.button-red:active {
+  color: #e37376;
+  background-color: #d7373b;
+  box-shadow: inset 0 2px #c13135;
+}
+
+
+/* Зеленая кнопка */
 .button-green {
   background: #00ca74;
 }
+.button-green:hover {
+  background: #00bc6c;
+}
+.button-green:active {
+  color: #4dc491;
+  background: #00aa62;
+  box-shadow: inset 0 2px #009958;
+}
+
+
+/* Желтая кнопка */
 .button-yellow {
   background: #efc84a;
 }
+.button-yellow:hover {
+  background: #eab534;
+}
+.button-yellow:active {
+  color: #edc265;
+  background: #e5a722;
+  box-shadow: inset 0 2px #ce961f;
+}
+
+
+/* Серая кнопка */
 .button-gray {
-  background: #eeeeee;
   color: black;
+  background: #eeeeee;
+}
+.button-gray:hover {
+  background: #dfdfdf;
+}
+.button-gray:active {
+  color: #959595;
+  background: #d5d5d5;
+  box-shadow: inset 0 2px #bfbfbf;
 }
 
 
@@ -159,7 +206,8 @@ body {
   background: green;
 }
 .slider .button {
-  padding: 16px 55px;
+  padding-left: 55px;
+  padding-right: 55px;
 }
 /* Пока не знаю как сделать */
 .slider-control {
@@ -173,7 +221,6 @@ body {
   width: 1160px;
   padding: 0 20px;
   margin: auto;
-  background: #ccc;
 }
 
 
@@ -204,6 +251,10 @@ body {
   margin-right: 20px;
   margin-bottom: 30px;
   background: yellow;
+}
+.benefit-list .button {
+  padding-left: 40px;
+  padding-right: 40px;
 }
 .img-red {
   background: #888 url("../img/adv-red.png") no-repeat;
@@ -404,7 +455,6 @@ body {
   margin-bottom: 38px;
 }
 .map-inner .button {
-  box-sizing: border-box;
   width: 100%;
 }
 
@@ -455,31 +505,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Заголовок каталога*/
 .page-heading {
   padding-top: 60px;
@@ -495,12 +520,6 @@ body {
 }
 
 
-
-
-
-
-
-
 /* Левая колонка */
 .column-left {
   width: 260px;
@@ -508,6 +527,7 @@ body {
   float: left;
   background: #555;
 }
+
 
 /* Основная форма */
 .catalog-form b {
@@ -531,6 +551,7 @@ body {
   padding: 20px 0;
   background: green;
   margin-bottom: 15px;
+  border-radius: 2px;
 }
 .range-inner {
   margin: auto;
@@ -743,12 +764,10 @@ body {
 
 /*Кнопка отправки формы*/
 .catalog-form button {
+  border: 0;
   width: 100%;
   font-weight: 700;
-  border: 0;
 }
-
-
 
 
 /* Правая колонка в контенте */
@@ -756,13 +775,13 @@ body {
   width: 760px;
   margin-top: 55px; 
   float: right;
-  background: lightgreen;
 }
+
 
 /* Варианты сортировки */
 .sorting {
   background: #aaa;
-  margin-bottom: 20px;
+  margin-bottom: 18px;
   height: 24px;
 }
 .sorting b {
@@ -799,6 +818,7 @@ body {
 .sorting-list .sorting-active, .sorting-list a:active {
   color: black;
 }
+
 
 /* Треугольники*/
 .sorting-triangles {
@@ -851,58 +871,97 @@ body {
 }
 
 
-
-
-
-
-/* Результаты поиска */
+/* Список товаров */
 .goods-wrap {
   font-size: 0;
-  margin-bottom: 60px;
+  margin-bottom: 64px;
 }
 
 
 /* Товар */
 .goods {
-  width: 360px;
-  height: 616px;
   display: inline-block;
   vertical-align: top;
-  font-size: 18px;
-  position: relative;
-  margin-top: 40px;
+  width: 360px;
+  height: 616px;
+  margin-top: 36px;
   margin-right: 40px;
+  position: relative;
+  font-size: 18px;
+  background: #e5e5e5;
+}
+.goods:hover {
+  box-shadow: 0 6px 16px #cfcfcf;
 }
 .goods:nth-child(2n) {
-  margin-right:0;
+  margin-right: 0;
 }
-.goods-top-element {
-  height: 40px;
-  background: black;
+.goods-top {
+  background-color: #e9e9e9;
+  padding: 8px 16px;
+  font-size: 0;
+  border-radius: 3px 3px 0 0;
 }
-.goods-bottom-element {
-  position: absolute;
-  width: 100%;
-  bottom: 0;
-  background: red;
-  padding-top: 30px;
+.goods-top span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 14px;
+  height: 14px;
+  margin-right: 8px;
+  border-radius: 50%;
+  background: #ffffff;
 }
-.goods-bottom-element b {
+.goods:hover .goods-top {
+  background-color: #4d4d4d;
+  border-radius: 3px 3px 0 0;
+}
+.goods img {
   display: block;
-  margin-bottom: 20px;
+  width: 360px;
+  height: 576px;
+}
+.goods-bottom {
+  display: none;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background: #eeeeee;
+  padding-top: 26px;
+  text-align: center;
+}
+.goods:hover .goods-bottom {
+  display: block;
+}
+.goods-bottom b {
+  display: block;
+  margin-bottom: 8px;
   font-size: 18px;
   line-height: 30px;
   text-align: center;
   text-transform: uppercase;
 }
-.goods-bottom-element p {
+.goods-bottom p {
   margin-bottom: 30px;
   line-height: 18px;
   text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+  color: #666666;
 }
-.goods-bottom-element a {
-  margin-bottom: 30px;
+.goods-bottom .button {
+  width: 200px;
+  margin-bottom: 43px;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 400;
 }
+.goods-bottom .button:hover {
+  background: #e74246;
+}
+.goods-bottom .button:active {
+  box-shadow: inset 0 2px #c13135;
+  background: #d7373b;
+} 
 
 
 /* Пагинатор */
@@ -919,9 +978,8 @@ body {
   margin-right: 10px;
   background: white;
 }
-
-
-
-
-
-
+.paginator .button {
+  padding-left: 78px;
+  padding-right: 78px;
+  font-weight: 700;
+}
