@@ -18,7 +18,6 @@ body {
   width: 1160px;
   padding: 0 20px;
   margin: auto;
-  background: #aaa;
 }
 
 
@@ -105,7 +104,7 @@ body {
   line-height: 30px;
   font-weight: 500;
   text-transform: uppercase;
-  background: #000;
+  background: #eeeeee;
 }
 
 
@@ -154,7 +153,20 @@ body {
   display: inline-block;
   text-decoration: none;
   color: inherit;
-  background: #ccc;
+}
+.nav a:hover {
+  color: #fb565a;
+}
+.nav a:active {
+  color: #a6a6a6;
+}
+.nav .nav-active {
+  border-bottom: 2px solid #fb565a;
+  color: black;
+}
+.nav .nav-active:hover,
+.nav .nav-active:active {
+  color: black;
 }
 
 
@@ -169,7 +181,6 @@ body {
   padding-left: 40px;
   color: inherit;
   text-decoration: none;
-  background: #ccc;
 }
 .cart a::before {
   content: "";
@@ -180,36 +191,46 @@ body {
   top: 7px;
   background: url("../img/cart.png");
 }
+.cart a:hover {
+  color: #fb565a;
+}
+.cart a:active {
+  color: #a6a6a6;
+}
+.cart .nav-active {
+  border-bottom: 2px solid #fb565a;
+  color: black;
+}
+.cart .nav-active:hover,
+.cart .nav-active:active {
+  color: black;
+}
 
 
 /* Слайдер */
 .slider {
-  background: #666;
+  background: #ddd;
   padding-top: 60px;
   padding-bottom: 80px;
 }
 .slider-desc {
   width: 400px;
   float: left;
-  background: #444;
 }
 .slider-desc b {
   display: block;
   margin-bottom: 25px;
   font-size: 55px;
   line-height: 55px;
-  background: yellow;
 }
 .slider-desc p {
   margin: 0;
   margin-bottom: 40px;
-  background: green;
 }
 .slider .button {
   padding-left: 55px;
   padding-right: 55px;
 }
-/* Пока не знаю как сделать */
 .slider-control {
   display: none;
 }
@@ -228,14 +249,12 @@ body {
 .benefit-list {
   margin-top: 80px;
   margin-bottom: 80px;
-  background: red;
 }
 .benefit-item {
   width: 300px;
   float: left;
   padding-top: 146px;
   margin-right: 100px;
-  background-color: yellow;
 }
 .benefit-item:last-child {
   margin-right: 0;
@@ -250,29 +269,27 @@ body {
 .benefit-item p {
   margin-right: 20px;
   margin-bottom: 30px;
-  background: yellow;
 }
 .benefit-list .button {
   padding-left: 40px;
   padding-right: 40px;
 }
 .img-red {
-  background: #888 url("../img/adv-red.png") no-repeat;
+  background: #ffffff url("../img/adv-red.png") no-repeat;
 }
 .img-green {
-  background: #888 url("../img/adv-green.png") no-repeat;
+  background: #ffffff url("../img/adv-green.png") no-repeat;
 }
 .img-yellow {
-  background: #888 url("../img/adv-yellow.png") no-repeat;
+  background: #ffffff url("../img/adv-yellow.png") no-repeat;
 }
 
 
 /* Основная информация и описание */
 .index-wrap {
-  border-top: 2px solid red;
+  border-top: 2px solid #eeeeee;
   padding-top: 40px;
   margin-bottom: 72px;
-  background: blue;
 }
 
 
@@ -281,7 +298,6 @@ body {
   width: 660px;
   float: left;
   margin-top: 35px;
-  background: #666;
 }
 .info-left b {
   display: block;
@@ -289,7 +305,6 @@ body {
   font-size: 45px;
   line-height: 45px;
   font-weight: 500;
-  background: red;
 }
 .info-left p {
   margin-bottom: 40px;
@@ -305,7 +320,6 @@ body {
   margin: 0;
   padding: 0;
   list-style: none;
-  background: red;
 }
 .info-item {
   position: relative;
@@ -322,7 +336,7 @@ body {
   left: 0;
   width: 25px;
   height: 2px;
-  background: black;
+  background: #fb565a;
 }
 
 
@@ -330,7 +344,6 @@ body {
 .info-right {
   width: 360px;
   float: right;
-  background: green;
 }
 .info-right img {
   display: block;
@@ -351,8 +364,7 @@ body {
 }
 .percent-inner {
   width: 120px;
-  background: yellow;
-  display: inline-block; /* Вместо флоата */
+  display: inline-block;
   vertical-align: bottom;
 }
 .percent-num {
@@ -375,11 +387,9 @@ body {
 
 /* Список вебсайтов с ссылками */
 .website-list {
-  border-top: 2px solid red;
-  border-bottom: 3px solid red;
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
   margin-bottom: 80px;
-  background: green;
-  
   overflow: hidden;
 }
 .website-item {
@@ -390,7 +400,6 @@ body {
   text-align: center;
   font-size: 0;
   line-height: 180px;
-  background: black;
   position: relative;
 }
 .website-item:first-child {
@@ -404,21 +413,30 @@ body {
   position: absolute;
   width: 2px;
   height: 52px;
-  background: red;
+  background: #eeeeee;
   right: -19px;
   top: 64px;
 }
 .website-item img {
-  background: yellow;
   vertical-align: middle;
 }
+.website-item a {
+  opacity: 0.4;
+}
+.website-item a:hover {
+  opacity: 1;
+}
+.website-item img:active {
+  opacity: 0.2;
+}
+
+
 
 
 /* Карта */
 .map {
   padding: 54px 0;
   position: relative;
-  background: yellow;
 }
 .map iframe {
   position: absolute;
@@ -433,7 +451,7 @@ body {
   width: 220px;
   padding: 50px;
   padding-bottom: 46px;
-  background: red;
+  background: white;
 }
 .map-inner h2 {
   margin: 0;
@@ -464,21 +482,20 @@ body {
   width: 1160px;
   padding: 68px 20px;
   margin: auto;
-  background: #ccc;
 }
 .social-wrap {
   width: 260px;
   float: left;
-  background: red;
 }
 .social-wrap a {
-  background: black;
+  background-color: #e1e1e1;
   float: left;
   width: 80px;
   height: 80px;
   font-size: 0;
   margin: 0 5px;
   border-radius: 50%;
+  position: relative;
 }
 .social-wrap a:first-child {
   margin-left: 0;
@@ -486,8 +503,37 @@ body {
 .social-wrap a:last-child {
   margin-right: 0;
 }
+.social-wrap a:hover {
+  background-color: #e74246;
+}
+.social-wrap a:active {
+  background-color: #d7373b;
+  box-shadow: inset 0 2px #c13135;
+}
+.social-wrap a::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  margin-top: -15px;
+  margin-left: -15px;
+  background: yellow;
+}
+.social-wrap a:active::before {
+  opacity: 0.5;
+}
+.social-wrap .vk::before {
+  background: url("../img/icon-vk.png") no-repeat 50% 50%;
+}
+.social-wrap .fb::before {
+  background: url("../img/icon-fb.png") no-repeat 50% 50%;
+}
+.social-wrap .inst::before {
+  background: url("../img/icon-inst.png") no-repeat 50% 50%;
+}
 .footer-text {
-  background: #333;
   float: left;
   margin-left: 140px;
 }
@@ -510,7 +556,7 @@ body {
   padding-top: 60px;
   padding-bottom: 107px;
   text-align: center;
-  background: red;
+  background: #eeeeee;
 }
 .page-heading h1 {
   margin: 0;
@@ -525,7 +571,6 @@ body {
   width: 260px;
   margin-top: 55px;
   float: left;
-  background: #555;
 }
 
 
@@ -542,16 +587,15 @@ body {
 /* Стоимость: */
 .form-range {
   margin-bottom: 55px;
-  background: lightgreen;
 }
 .form-range b {
   margin-bottom: 48px;
 }
 .range-wrap {
   padding: 20px 0;
-  background: green;
   margin-bottom: 15px;
   border-radius: 2px;
+  background: #eeeeee;
 }
 .range-inner {
   margin: auto;
@@ -559,12 +603,11 @@ body {
   height: 40px;
   position: relative;
   overflow: hidden;
-  background: #999;
 }
 .range-line {
   width: 100%;
   height: 2px;
-  background: white;
+  background: #00ca74;
   position: absolute;
   top: 50%;
   margin-top: -1px
@@ -572,12 +615,13 @@ body {
 .range-min {
   width: 20px;
   height: 20px;
-  background: red;
+  background: #ffffff;
   border-radius: 50%;
   position: absolute;
   left: 0;
   top: 50%;
   margin-top: -10px;
+  box-shadow: 0 2px 0 #cccdcd;
 }
 .range-min::before,
 .range-max::before {
@@ -585,7 +629,7 @@ body {
   position: absolute;
   width: 4px;
   height: 4px;
-  background: yellow;
+  background: #ababab;
   border-radius: 50%;
   top: 50%;
   left: 50%;
@@ -595,17 +639,18 @@ body {
 .range-max {
   width: 20px;
   height: 20px;
-  background: blue;
+  background: #ffffff;
   border-radius: 50%;
   position: absolute;
   left: 142px;
   top: 50%;
   margin-top: -10px;
+  box-shadow: 0 2px 0 #cccdcd;
 }
 .range-max::after {
   content: "";
   position: absolute;
-  background: black;
+  background: #d7dcde;
   width: 500px;
   height: 2px;
   left: 20px;
@@ -613,19 +658,16 @@ body {
   margin-top: -1px;
 }
 .cost-wrap {
-  background: #ddd;
   text-transform: uppercase;
 }
 .cost-min {
   float: left;
-  background: yellow;
 }
 .cost-max {
   float: right;
-  background: blue;
 }
 .cost {
-  background: red;
+  background: #eeeeee;
   display: inline-block;
   margin-left: 8px;
   padding: 6px 5px;
@@ -637,7 +679,6 @@ body {
 /* Сетка: */
 .form-layout {
   margin-bottom: 35px;
-  background: lightgreen;
 }
 .form-layout b {
   margin-bottom: 6px;
@@ -701,7 +742,6 @@ body {
 /* Особенности: */
 .form-feature {
   margin-bottom: 40px;
-  background: lightgreen;
 }
 .form-feature b {
   margin-bottom: 6px;
@@ -780,7 +820,6 @@ body {
 
 /* Варианты сортировки */
 .sorting {
-  background: #aaa;
   margin-bottom: 18px;
   height: 24px;
 }
@@ -796,7 +835,6 @@ body {
   width: 280px;
   margin-left: 240px;
   float: left;
-  background: yellow;
   font-size: 0;
 }
 .sorting-list a {
@@ -815,22 +853,26 @@ body {
 .sorting-list a:hover {
   color: #666;
 }
-.sorting-list .sorting-active, .sorting-list a:active {
+.sorting-list a:active {
   color: black;
 }
-
+.sorting-list .sorting-active {
+  color: black;
+}
+.sorting-list .sorting-active:hover,
+.sorting-list .sorting-active:active{
+  color: black;
+}
 
 /* Треугольники*/
 .sorting-triangles {
   float: right;
   width: 60px;
-  background: red;
 }
 .sorting-triangles div {
   float: left;
   width: 30px;
   height: 24px;
-  background: blue;
   position: relative;
 }
 .max-min a {
@@ -851,6 +893,13 @@ body {
 .max-min a:active {
   border-top-color: black;
 }
+.max-min .triangle-active {
+  border-top-color: black;
+}
+.max-min .triangle-active:hover,
+.max-min .triangle-active:active {
+  border-top-color: black;
+}
 .min-max a {
   position: absolute;
   border: 5px solid transparent;
@@ -860,16 +909,19 @@ body {
   bottom: 50%;
   margin-bottom: -4px;
 }
-.min-max .triangle-active {
-  border-bottom-color: black;
-}
 .min-max a:hover {
   border-bottom-color: #666;
 }
 .min-max a:active {
   border-bottom-color: black;
 }
-
+.min-max .triangle-active {
+  border-bottom-color: black;
+}
+.min-max .triangle-active:hover,
+.min-max .triangle-active:active {
+  border-bottom-color: black;
+}
 
 /* Список товаров */
 .goods-wrap {
@@ -966,17 +1018,45 @@ body {
 
 /* Пагинатор */
 .paginator {
-  background: red;
   margin-bottom: 60px;
-  padding:0;
+  padding: 0;
   list-style: none;
 }
 .paginator li {
   float: left;
   width: 50px;
   height: 50px;
-  margin-right: 10px;
+  margin-right: 11px;
+  background: #eeeeee;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+.paginator .page-link {
+  position: relative;
+  z-index: 10;
+  display: block;
+  height: 100%;
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
+}
+.paginator .page-link:hover {
+  background: #dfdfdf;
+}
+.paginator .page-link:active {
+  color: #959595;
+  background: #d5d5d5;
+  box-shadow: inset 0 2px #bfbfbf;
+}
+.paginator .page-active {
   background: white;
+  box-shadow: inset 0 0 0 3px #eeeeee;
+}
+.paginator .page-active:hover, .paginator .page-active:active {
+  color: black;
+  background: white;
+  box-shadow: inset 0 0 0 3px #eeeeee;
 }
 .paginator .button {
   padding-left: 78px;
