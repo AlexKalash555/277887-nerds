@@ -554,6 +554,34 @@ body {
 }
 
 
+/* Еще не сделал */
++.form-writeus {
+  position: absolute;
+  left: 50%;
+  margin-left: -400px;
+  bottom: -36px;
+  width: 760px;
+  padding: 0 100px;
+  padding-top: ;
+  padding-bottom: ;
+  min-height: 500px;
+  background: #ccc;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* Подвал*/
 .footer {
   width: 1160px;
@@ -652,7 +680,7 @@ body {
 
 
 /* Основная форма */
-.catalog-form b {
+.form-filter b {
   display: block;
   text-transform: uppercase;
   font-size: 18px;
@@ -732,10 +760,10 @@ body {
 
 
 /* Сетка: */
-.form-layout {
+.layout-filter {
   margin-bottom: 35px;
 }
-.form-layout b {
+.layout-filter b {
   margin-bottom: 6px;
 }
 .layout-radio {
@@ -795,10 +823,10 @@ body {
 
 
 /* Особенности: */
-.form-feature {
+.feature-filter {
   margin-bottom: 40px;
 }
-.form-feature b {
+.feature-filter b {
   margin-bottom: 6px;
 }
 .feature-checkbox {
@@ -858,7 +886,7 @@ body {
 
 
 /*Кнопка отправки формы*/
-.catalog-form button {
+.form-filter button {
   border: 0;
   width: 100%;
   font-weight: 700;
