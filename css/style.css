@@ -662,94 +662,72 @@ body {
 
 
 /* Стоимость: */
-.form-range {
+.range-filter {
   margin-bottom: 55px;
 }
-.form-range b {
+.range-filter b {
   margin-bottom: 48px;
 }
-.range-wrap {
-  padding: 20px 0;
-  margin-bottom: 15px;
-  border-radius: 2px;
+.range-control {
+  position: relative;
+  height: 41px;
+  padding-top: 39px;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-bottom: 14px;
+  border-radius: 5px;
   background: #eeeeee;
 }
-.range-inner {
-  margin: auto;
-  width: 224px;
-  height: 40px;
-  position: relative;
-  overflow: hidden;
+.range-control .scale {
+  height: 2px;
+  background: #d7dcde;
 }
-.range-line {
-  width: 100%;
+.range-control .bar {
+  width: 142px;
   height: 2px;
   background: #00ca74;
-  position: absolute;
-  top: 50%;
-  margin-top: -1px
 }
-.range-min {
-  width: 20px;
-  height: 20px;
-  background: #ffffff;
-  border-radius: 50%;
+.range-control .toggle {
   position: absolute;
-  left: 0;
-  top: 50%;
-  margin-top: -10px;
-  box-shadow: 0 2px 0 #cccdcd;
-}
-.range-min::before,
-.range-max::before {
-  content: "";
-  position: absolute;
+  top: 30px;
+  left: 0px;
   width: 4px;
   height: 4px;
+  cursor: pointer;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
   background: #ababab;
-  border-radius: 50%;
-  top: 50%;
-  left: 50%;
-  margin-top: -2px;
-  margin-left: -2px;
+  box-shadow: 0 2px 1px 0 #cfcfcf;
 }
-.range-max {
-  width: 20px;
-  height: 20px;
-  background: #ffffff;
-  border-radius: 50%;
-  position: absolute;
-  left: 142px;
-  top: 50%;
-  margin-top: -10px;
-  box-shadow: 0 2px 0 #cccdcd;
+.range-control .toggle-min {
+  left: 18px;
 }
-.range-max::after {
-  content: "";
-  position: absolute;
-  background: #d7dcde;
-  width: 500px;
-  height: 2px;
-  left: 20px;
-  top: 50%;
-  margin-top: -1px;
+.range-control .toggle-max {
+  left: 160px;
 }
-.cost-wrap {
+.price-control {
+  font-size: 0;
+}
+.price-control label {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 16px;
+  line-height: 22px;
+  width: 50%;
   text-transform: uppercase;
 }
-.cost-min {
-  float: left;
+.price-max {
+  text-align: right;
 }
-.cost-max {
-  float: right;
-}
-.cost {
-  background: #eeeeee;
-  display: inline-block;
+.price-control input {
+  width: 60px;
   margin-left: 8px;
-  padding: 6px 5px;
-  width: 70px;
+  padding: 10px;
   text-align: center;
+  color: #283136;
+  border: none;
+  border-radius: 3px;
+  background: #f1f1f1;
 }
 
 
@@ -1130,7 +1108,8 @@ body {
   background: white;
   box-shadow: inset 0 0 0 3px #eeeeee;
 }
-.paginator .page-active:hover, .paginator .page-active:active {
+.paginator .page-active:hover,
+.paginator .page-active:active {
   color: black;
   background: white;
   box-shadow: inset 0 0 0 3px #eeeeee;

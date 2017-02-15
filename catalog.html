@@ -39,28 +39,25 @@
       <div class="column-left">
         <form class="catalog-form" action="#" method="get">
           
+          
           <!-- Стоимость: -->
-          <div class="form-range">
+          <div class="range-filter">
             <b>Стоимость:</b>
-            <div class="range-wrap">
-              <div class="range-inner">
-                <div class="range-line"></div>
-                <div class="range-min"></div>
-                <div class="range-max"></div>
+            <div class="range-control">
+              <div class="scale">
+                <div class="bar"></div>
               </div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
             </div>
-            <div class="cost-wrap clearfix">
-              <div class="cost-min">
-                <span>От</span>
-                <span class="cost">0</span>
-              </div>
-              <div class="cost-max">
-                <span>До</span>
-                <span class="cost">15 000</span>
-              </div>
+            
+            <div class="price-control">
+              <label class="price-min">От <input name="price-min" type="text" value="0"></label>
+              <label class="price-max">До <input name="price-max" type="text" value="15 000"></label>
             </div>
           </div>
 
+          
           <!-- Сетка: -->
           <div class="form-layout">
             <b>Сетка:</b>
