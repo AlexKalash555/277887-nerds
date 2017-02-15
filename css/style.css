@@ -208,31 +208,107 @@ body {
 
 
 /* Слайдер */
-.slider {
-  background: #ddd;
+.slider{
+  background: #eee;
+}
+.slider .center {
+  width: 1160px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.slider-controls{
+  position: absolute;
+  bottom: 104px;
+  left: 50%;
+  width: 200px;
+  height: 10px;
+  margin-left: -100px;
+  text-align: center;
+  z-index: 1000;
+}
+.slider-controls label{
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 0 7px;
+  background: white;
+  border: 3px solid white;
+  vertical-align: top;
+  border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+.slider input {
+  display: none;
+}
+#btn-1:checked ~ .slider-controls label[for="btn-1"]::before,
+#btn-2:checked ~ .slider-controls label[for="btn-2"]::before,
+#btn-3:checked ~ .slider-controls label[for="btn-3"]::before { 
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  border: 2px solid #c1c1c1;
+  top: 50%;
+  left: 50%;
+  margin-top: -4px;
+  margin-left: -4px;
+  border-radius: 50%;
+}
+.slider-controls .active{
+  background: #c1c1c1;
+}
+.slide {
   padding-top: 60px;
   padding-bottom: 80px;
 }
-.slider-desc {
-  width: 400px;
-  float: left;
+.slide:nth-child(1){
+  background-image: url('../img/slide1.png');
+  background-repeat: no-repeat;
+  background-position: 432px 0;
 }
-.slider-desc b {
+.slide:nth-child(2){
+    background-image:url('../img/slide2.png');
+    background-repeat:no-repeat;
+    background-position:100% 10px;
+}
+.slide:nth-child(3){
+    background-image:url('../img/slide3.png');
+    background-repeat:no-repeat;
+    background-position:100% 10px;
+}
+.slide{
+    display:none;
+}
+#btn-1:checked ~ .slides .slide:nth-child(1) { 
+    display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2) { 
+    display: block;
+}
+#btn-3:checked ~ .slides .slide:nth-child(3) { 
+    display: block;
+}
+.slide:nth-child(3){
+    background-image:url('../img/slide3.png');
+    background-repeat:no-repeat;
+    background-position:100% 10px;
+}
+.slide-desc b {
   display: block;
   margin-bottom: 25px;
   font-size: 55px;
   line-height: 55px;
+  font-weight: 500;
 }
-.slider-desc p {
+.slide-desc p {
   margin: 0;
   margin-bottom: 40px;
 }
-.slider .button {
+.slide-desc .button {
   padding-left: 55px;
   padding-right: 55px;
-}
-.slider-control {
-  display: none;
 }
 
 
@@ -444,6 +520,7 @@ body {
   height: 100%;
   top: 0;
   left: 0;
+  border: 0;
 }
 .map-inner {
   position: relative;  
@@ -467,7 +544,7 @@ body {
   margin-bottom: 18px;
   font-size: 16px;
   line-height: 18px;
-  background: white;
+  color: #707070;
 }
 .map-inner p:last-of-type {
   margin-bottom: 38px;
