@@ -48,7 +48,7 @@ body {
   background-color: #e74246;
 }
 .button-red:active {
-  color: #e37376;
+  color: rgba(255, 255, 255, 0.3);
   background-color: #d7373b;
   box-shadow: inset 0 2px #c13135;
 }
@@ -62,7 +62,7 @@ body {
   background: #00bc6c;
 }
 .button-green:active {
-  color: #4dc491;
+  color: rgba(255, 255, 255, 0.3);
   background: #00aa62;
   box-shadow: inset 0 2px #009958;
 }
@@ -76,7 +76,7 @@ body {
   background: #eab534;
 }
 .button-yellow:active {
-  color: #edc265;
+  color: rgba(255, 255, 255, 0.3);
   background: #e5a722;
   box-shadow: inset 0 2px #ce961f;
 }
@@ -91,7 +91,7 @@ body {
   background: #dfdfdf;
 }
 .button-gray:active {
-  color: #959595;
+  color: rgba(0, 0, 0, 0.3);
   background: #d5d5d5;
   box-shadow: inset 0 2px #bfbfbf;
 }
@@ -118,12 +118,13 @@ body {
   width: 160px;
   height: 65px;
 }
-.logo img:hover {
-  opacity: 0.6;
+.logo:hover {
+  opacity: 0.8;
 }
-.logo img:active {
-  opacity: 0.3;
+.logo img:active  {
+  opacity: 0.4;
 }
+
 
 
 /* Навигация */
@@ -158,7 +159,8 @@ body {
   color: #fb565a;
 }
 .nav a:active {
-  color: #a6a6a6;
+  color: black;
+  opacity: 0.3;
 }
 .nav .nav-active {
   border-bottom: 2px solid #fb565a;
@@ -190,6 +192,7 @@ body {
   left: 0;
   top: 7px;
   background: url("../img/cart.png");
+  opacity: 0.3;
 }
 .cart a:hover {
   color: #fb565a;
@@ -497,13 +500,13 @@ body {
   vertical-align: middle;
 }
 .website-item a {
-  opacity: 0.4;
+  opacity: 0.2;
 }
 .website-item a:hover {
   opacity: 1;
 }
 .website-item img:active {
-  opacity: 0.2;
+  opacity: 0.1;
 }
 
 
@@ -511,7 +514,8 @@ body {
 
 /* Карта */
 .map {
-  padding: 54px 0;
+  padding-top: 54px;
+  padding-bottom: 30px;
   position: relative;
 }
 .map iframe {
@@ -585,7 +589,7 @@ body {
 /* Подвал*/
 .footer {
   width: 1160px;
-  padding: 68px 20px;
+  padding: 70px 20px;
   margin: auto;
 }
 .social-wrap {
@@ -627,7 +631,7 @@ body {
   background: yellow;
 }
 .social-wrap a:active::before {
-  opacity: 0.5;
+  opacity: 0.3;
 }
 .social-wrap .vk::before {
   background: url("../img/icon-vk.png") no-repeat 50% 50%;
@@ -800,7 +804,7 @@ body {
 }
 .layout-radio input:checked + label span::before {
   background: url("../img/radio-on.png");
-  opacity: 0.6;
+  opacity: 0.4;
 }
 .layout-radio input:checked + label:hover span::before {
   background: url("../img/radio-on.png");
@@ -808,17 +812,17 @@ body {
 }
 .layout-radio input:not(:checked) + label span::before {
   background: url("../img/radio-off.png");
-  opacity: 0.6;
+  opacity: 0.4;
 }
 .layout-radio input:not(:checked) + label:hover span::before {
   background: url("../img/radio-off.png");
   opacity: 1;
 }
 .layout-radio input:disabled + label span::before {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 .layout-radio input:disabled + label:hover span::before {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 
@@ -863,7 +867,7 @@ body {
 }
 .feature-checkbox input:checked + label span::before {
   background: url("../img/checkbox-on.png") no-repeat;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .feature-checkbox input:checked + label:hover span::before {
   background: url("../img/checkbox-on.png") no-repeat;
@@ -871,17 +875,17 @@ body {
 }
 .feature-checkbox input:not(:checked) + label span::before {
   background: url("../img/checkbox-off.png") no-repeat;
-  opacity: 0.5;
+  opacity: 0.4;
 }
 .feature-checkbox input:not(:checked) + label:hover span::before {
   background: url("../img/checkbox-off.png") no-repeat;
   opacity: 1;
 }
 .feature-checkbox input:disabled + label span::before {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 .feature-checkbox input:disabled + label:hover span::before {
-  opacity: 0.3;
+  opacity: 0.1;
 }
 
 
@@ -925,7 +929,8 @@ body {
   vertical-align: bottom;
   font-size: 14px;
   line-height: 18px;
-  color: #b2b2b2;
+  color: black;
+  opacity: 0.3;
   text-transform: uppercase;
   text-decoration: none;
   width: 85px;
@@ -934,17 +939,17 @@ body {
   width: 110px;
 }
 .sorting-list a:hover {
-  color: #666;
+  opacity: 0.6;
 }
 .sorting-list a:active {
-  color: black;
+  opacity: 1;
 }
 .sorting-list .sorting-active {
-  color: black;
+  opacity: 1;
 }
 .sorting-list .sorting-active:hover,
 .sorting-list .sorting-active:active{
-  color: black;
+  opacity: 1;
 }
 
 /* Треугольники*/
@@ -961,50 +966,47 @@ body {
 .max-min a {
   position: absolute;
   border: 5px solid transparent;
-  border-top: 10px solid #b2b2b2;
+  border-top: 10px solid #000000;
   font-size: 0;
   right: 0;
   top: 50%;
   margin-top: -4px;
-}
-.max-min .triangle-active {
-  border-top-color: black;
+  color: black;
+  opacity: 0.2;
 }
 .max-min a:hover {
-  border-top-color: #666;
+  opacity: 0.4;
 }
 .max-min a:active {
-  border-top-color: black;
+  opacity: 1;
 }
-.max-min .triangle-active {
-  border-top-color: black;
-}
+.max-min .triangle-active,
 .max-min .triangle-active:hover,
 .max-min .triangle-active:active {
-  border-top-color: black;
+  opacity: 1;
 }
 .min-max a {
   position: absolute;
   border: 5px solid transparent;
-  border-bottom: 10px solid #b2b2b2;
+  border-bottom: 10px solid #000000;
   font-size: 0;
   right: 0;
   bottom: 50%;
   margin-bottom: -4px;
+  opacity: 0.2;
 }
 .min-max a:hover {
-  border-bottom-color: #666;
+  opacity: 0.4;
 }
 .min-max a:active {
-  border-bottom-color: black;
+  opacity: 1;
 }
-.min-max .triangle-active {
-  border-bottom-color: black;
-}
+.min-max .triangle-active,
 .min-max .triangle-active:hover,
 .min-max .triangle-active:active {
-  border-bottom-color: black;
+  opacity: 1;
 }
+
 
 /* Список товаров */
 .goods-wrap {
@@ -1128,7 +1130,7 @@ body {
   background: #dfdfdf;
 }
 .paginator .page-link:active {
-  color: #959595;
+  color: rgba(0, 0, 0, 0.3);
   background: #d5d5d5;
   box-shadow: inset 0 2px #bfbfbf;
 }
