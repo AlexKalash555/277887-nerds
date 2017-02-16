@@ -240,9 +240,22 @@
       
       
       <!-- Форма обратной связи. Пока не доделал -->
-      <form class="form-writeus">
+      <form class="feedback" action="#" method="get">
         <b>Напишите нам</b>
-        
+        <div class="feedback-wrap clearfix">
+          <div class="feedback-data">
+            <p>Ваше имя:</p>
+            <input type="text" name="name" placeholder="Представьтесь, пожалуйста">
+          </div>
+          <div class="feedback-data">
+            <p>Ваш e-mail:</p>
+            <input type="email" name="email"  placeholder="Для отправки ответа">
+          </div>
+        </div>
+        <p>Текст письма</p>
+        <textarea>В свободной форме</textarea>
+        <button class="button button-red" type="submit">Отправить</button>
+        <button class="close"></button>
       </form>
       
       
