@@ -642,7 +642,7 @@ button:active {
 }
 
 
-/* Поле ввода в покое */
+/* Placeholder в покое */
 .feedback input::-webkit-input-placeholder {
   color: rgba(68, 68, 68, 0.5);
 }
@@ -654,13 +654,13 @@ button:active {
 }
 
 
-/* Поле ввода при наведении */
+/* Input при наведении */
 .feedback input:hover {
   border-color: #b4b9bb;
 }
 
 
-/* Поле ввода в фокусе */
+/* Placeholder в фокусе */
 .feedback input:focus {
   color: rgba(68, 68, 68, 1);
   border-color: #000000;
@@ -677,7 +677,7 @@ button:active {
 }
 
 
-/* Поле ввода при неправильном значении */
+/* Placeholder при неправильном значении */
 .feedback input:invalid {
   color: rgba(231, 66, 70, 1);
   border-color: #e74246;
@@ -703,7 +703,7 @@ button:active {
   padding: 12px;
   border-radius: 3px;
   border: 2px solid #d7dcde;
-  color: rgba(68, 68, 68, 0.5);
+  color: rgba(68, 68, 68, 1);
   margin-bottom: 48px;
 }
 .feedback textarea:hover {
@@ -719,6 +719,24 @@ button:active {
   border-color: #e74246;
   outline: none;
 }
+
+
+/* Placeholder в фокусе */
+.feedback textarea:focus {
+  color: rgba(68, 68, 68, 1);
+  border-color: #000000;
+  outline: none;
+}
+.feedback textarea:focus::-webkit-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+.feedback textarea:focus::-moz-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+.feedback textarea:focus:-ms-input-placeholder {
+  color: rgba(68, 68, 68, 1);
+}
+
 
 /* Кнопка */
 .feedback button {
