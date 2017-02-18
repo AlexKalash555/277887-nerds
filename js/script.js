@@ -29,7 +29,7 @@ popup.addEventListener("submit", function(event) {
   if (!login.value || !email.value) {
     event.preventDefault();
     popup.classList.remove("feedback-error");
-    popup.offsetWidth = popup.offsetWidth;
+    popup.offsetWidth;
     popup.classList.add("feedback-error");
   } else {  
     localStorage.setItem("login", login.value);

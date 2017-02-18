@@ -569,9 +569,10 @@ button:active {
     transform: translateX(-2000px);
   }
   100%  {
-    transform: translateX(30px);
+    transform: translateX(0px);
   }
 }
+
 @keyframes shake {
   0%, 100% {
     transform: translateX(0);
@@ -597,14 +598,17 @@ button:active {
   box-shadow: 0 20px 40px 5px #a2a2a2;
   display: none;
 }
+
+
 .feedback-show {
   display: block;
   animation: right-movement 0.4s;
 }
 .feedback-error {
-  display: block;
   animation: shake 0.4s;
 }
+
+
 .feedback b {
   display: block;
   font-size: 45px;
