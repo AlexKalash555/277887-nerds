@@ -566,7 +566,7 @@ button:active {
 /* Форма обратной связи */
 @keyframes right-movement {
   0%   {
-    transform: translateX(-20000px);
+    transform: translateX(-2000px);
   }
   100%  {
     transform: translateX(30px);
@@ -599,10 +599,11 @@ button:active {
 }
 .feedback-show {
   display: block;
-  animation: right-movement 0.3s;
+  animation: right-movement 0.4s;
 }
 .feedback-error {
-  animation: shake 0.3s;
+  display: block;
+  animation: shake 0.4s;
 }
 .feedback b {
   display: block;
