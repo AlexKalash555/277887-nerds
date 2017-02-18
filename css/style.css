@@ -564,6 +564,27 @@ button:active {
 
 
 /* Форма обратной связи */
+@keyframes right-movement {
+  0%   {
+    transform: translateX(-20000px);
+  }
+  100%  {
+    transform: translateX(30px);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-10px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(10px);
+  }
+}
+
+
 .feedback {
   position: absolute;
   z-index: 1000;
@@ -574,6 +595,14 @@ button:active {
   background: white;
   padding: 68px 100px 84px 100px;
   box-shadow: 0 20px 40px 5px #a2a2a2;
+  display: none;
+}
+.feedback-show {
+  display: block;
+  animation: right-movement 0.3s;
+}
+.feedback-error {
+  animation: shake 0.3s;
 }
 .feedback b {
   display: block;
