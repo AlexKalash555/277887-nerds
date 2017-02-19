@@ -180,16 +180,18 @@
         <b>Напишите нам</b>
         <div class="feedback-wrap clearfix">
           <div class="feedback-data">
-            <p>Ваше имя:</p>
-            <input type="text" name="login" placeholder="Представьтесь, пожалуйста" >
+            <label for="text-input"><p>Ваше имя:</p></label>
+            <input id="text-input" type="text" name="login" placeholder="Представьтесь, пожалуйста">
           </div>
           <div class="feedback-data">
-            <p>Ваш e-mail:</p>
-            <input type="email" name="email" placeholder="Для отправки ответа" >
+            <label for="email-input"><p>Ваш e-mail:</p></label>
+            <input id="email-input" type="email" name="email" placeholder="Для отправки ответа" >
           </div>
         </div>
-        <p>Текст письма</p>
-        <textarea placeholder="В свободной форме"></textarea>
+        <label>
+          <p>Текст письма</p>
+          <textarea placeholder="В свободной форме"></textarea>
+        </label>
         <button class="button button-red" type="submit">Отправить</button>
         <button class="close"></button>
       </form>
