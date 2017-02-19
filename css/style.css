@@ -178,6 +178,7 @@ button:active {
 }
 .cart a {
   display: inline-block;
+  vertical-align: top;
   position: relative;
   padding-left: 40px;
   color: inherit;
@@ -190,7 +191,7 @@ button:active {
   position: absolute;
   left: 0;
   top: 7px;
-  background: url("../img/cart.png");
+  background: url("../img/sprite.png") -10px -10px;
   opacity: 0.3;
 }
 .cart a:hover {
@@ -780,7 +781,7 @@ button:active {
   right: 90px;
   width: 21px;
   height: 21px;
-  background: url("../img/close.png");
+  background: url("../img/sprite.png") -10px -45px;
   opacity: 0.3;
 }
 .feedback .close:hover {
@@ -839,17 +840,17 @@ button:active {
   opacity: 0.3;
 }
 .social-wrap .vk::before {
-  background: url("../img/icon-vk.png") no-repeat 50% 50%;
+  background: url("../img/sprite.png") -8px -160px no-repeat;
 }
 .social-wrap .fb::before {
-  background: url("../img/icon-fb.png") no-repeat 50% 50%;
+  background: url("../img/sprite.png") -2px -82px ;
 }
 .social-wrap .inst::before {
-  background: url("../img/icon-inst.png") no-repeat 50% 50%;
+  background: url("../img/sprite.png") -6px -123px ;
 }
 .footer-text {
-  float: left;
-  margin-left: 140px;
+  float: right;
+  width: 760px;
 }
 .footer-text b {
   display: block;
