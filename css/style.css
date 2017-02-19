@@ -11,17 +11,11 @@ body {
   display: table;
   clear: both;
 }
-
-
-/* Центровщик*/
 .center {
   width: 1160px;
   padding: 0 20px;
   margin: auto;
 }
-
-
-/* Общие стили кнопок */
 .button {
   display: inline-block;
   vertical-align: top;
@@ -124,7 +118,8 @@ button:active {
 .logo:hover {
   opacity: 0.8;
 }
-.logo img:active  {
+/* в IE :active не изменяет opacity на ссылке, поэтому img */
+.logo img:active  { 
   opacity: 0.4;
 }
 
@@ -221,7 +216,6 @@ button:active {
   width: 1160px;
   margin: 0 auto;
   position: relative;
-  overflow: hidden;
 }
 .slider-controls{
   position: absolute;
@@ -357,13 +351,13 @@ button:active {
   padding-right: 40px;
 }
 .img-red {
-  background: #ffffff url("../img/adv-red.png") no-repeat;
+  background: #ffffff url("../img/adv.png") no-repeat -300px 0px;
 }
 .img-green {
-  background: #ffffff url("../img/adv-green.png") no-repeat;
+  background: #ffffff url("../img/adv.png") no-repeat 0px 0px;
 }
 .img-yellow {
-  background: #ffffff url("../img/adv-yellow.png") no-repeat;
+  background: #ffffff url("../img/adv.png") no-repeat -600px 0px;
 }
 
 
@@ -995,19 +989,19 @@ button:active {
   color: #d0d2d3;
 }
 .layout-radio input:checked + label span::before {
-  background: url("../img/radio-on.png");
+  background: url("../img/radio-checkbox.png") -5px -106px;
   opacity: 0.4;
 }
 .layout-radio input:checked + label:hover span::before {
-  background: url("../img/radio-on.png");
+  background: url("../img/radio-checkbox.png") -5px -106px;
   opacity: 1;
 }
 .layout-radio input:not(:checked) + label span::before {
-  background: url("../img/radio-off.png");
+  background: url("../img/radio-checkbox.png") -5px -71px;
   opacity: 0.4;
 }
 .layout-radio input:not(:checked) + label:hover span::before {
-  background: url("../img/radio-off.png");
+  background: url("../img/radio-checkbox.png") -5px -71px;
   opacity: 1;
 }
 .layout-radio input:disabled + label span::before {
@@ -1058,19 +1052,19 @@ button:active {
   color: #d0d2d3;
 }
 .feature-checkbox input:checked + label span::before {
-  background: url("../img/checkbox-on.png") no-repeat;
+  background: url("../img/radio-checkbox.png") -5px -38px;
   opacity: 0.4;
 }
 .feature-checkbox input:checked + label:hover span::before {
-  background: url("../img/checkbox-on.png") no-repeat;
+  background: url("../img/radio-checkbox.png") -5px -38px;
   opacity: 1;
 }
 .feature-checkbox input:not(:checked) + label span::before {
-  background: url("../img/checkbox-off.png") no-repeat;
+  background: url("../img/radio-checkbox.png") -5px -5px;
   opacity: 0.4;
 }
 .feature-checkbox input:not(:checked) + label:hover span::before {
-  background: url("../img/checkbox-off.png") no-repeat;
+  background: url("../img/radio-checkbox.png") -5px -5px;
   opacity: 1;
 }
 .feature-checkbox input:disabled + label span::before {
