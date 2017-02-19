@@ -652,7 +652,8 @@ button:active {
 .feedback-data:last-child {
   float: right;
 }
-.feedback p {
+.feedback span {
+  display: block;
   font-weight: bold;
   margin: 0;
   padding: 0;
